@@ -1,0 +1,560 @@
+<h2 id="section">单链表的一些常见面试题汇总</h2>
+<ol>
+  <li>单链表反转/逆序</li>
+  <li>求单链表倒数第N个数</li>
+  <li>找到单链表的中间结点</li>
+  <li>如何判断链表是否有环的存在</li>
+  <li>单链表建环，无环链表变有环</li>
+  <li>如何知道环的长度？</li>
+  <li>如何找出环的连接点在哪里？</li>
+  <li>删除单链表中的重复元素</li>
+</ol>
+
+<p>下面我先简单叙述一下每道题的思路，然后把实现的程序一起贴出来，不会讲得太细，我觉得只要有了思路之后，接下来的难点就是语言上的一些细节问题了，这个不自己去实现，听别人讲是体会不到的。
+要实现下面的代码你首先要会实现单链表, see：<a href="http://leihuang.net/2014/04/17/List/">线性表</a></p>
+
+<h2 id="section-1">1.单链表反转</h2>
+<p>我是利用三个指针来实现的，三个连续指针依次向前移动，每次反转前两个指针指向数之间的指针。</p>
+
+<p>代码如下：</p>
+
+<p><code>c
+/* 链表反转  */
+void ReverseList(List *L)
+{
+    if(!L-&gt;Next-&gt;Next)
+        ;
+    else{
+        List *pTemp = L-&gt;Next-&gt;Next-&gt;Next ;
+        List *pMid = L-&gt;Next-&gt;Next ;
+        List *pCurrent = L-&gt;Next ;
+        L-&gt;Next-&gt;Next = NULL ;
+        while(pTemp){
+            pMid-&gt;Next = pCurrent ;
+            pCurrent = pMid ;
+            pMid = pTemp ;
+            pTemp = pTemp-&gt;Next ;
+        }
+        pMid-&gt;Next = pCurrent ;
+        L-&gt;Next = pMid ;
+    }
+}
+</code></p>
+
+<h2 id="n">2.求单链表倒数第N个数</h2>
+<p>利用两指针遍历表，保持他们的距离为n，当后面的指针为NULL时，输出前面指针所指向的数，即倒数第N个数。</p>
+
+<p>函数代码：</p>
+
+<p><code>c
+/* 求单链表倒数第N个数 */
+int NIndex(List L,int n)
+{
+    List *fir,*sec ;
+    fir = L.Next ;
+    sec = L.Next ;
+    int i ;
+    for(i=0;sec;++i){
+        if(i&gt;=n){
+            fir = fir-&gt;Next ;
+            sec = sec-&gt;Next ;
+        }else
+            sec = sec-&gt;Next ;
+    }
+    return fir-&gt;elem ;
+}
+</code></p>
+
+<h2 id="section-2">3.找到单链表的中间结点</h2>
+<p>也是利用两个指针，一个慢移动指针(一次走一步)，一个快移动指针(一次走两步)，当快指针指向NULL时，则慢指针指向中间节点。</p>
+
+<p>代码如下：</p>
+
+<p><code>c
+/* 输出单链表的中间结点*/
+int Mid(List L)
+{
+    List *fir,*sec ;
+    fir = L.Next ;
+    sec = L.Next ;
+    while(sec-&gt;Next&amp;&amp;sec-&gt;Next-&gt;Next){
+        fir = fir-&gt;Next ;
+        sec = sec-&gt;Next-&gt;Next ;
+    }
+    return fir-&gt;elem ;
+}
+</code></p>
+
+<h2 id="section-3">4.如何判断链表是否有环的存在</h2>
+<p>利用快慢指针遍历链表，如果存在环，则两指针会相遇，否则快指针会指向NULL结束。</p>
+
+<p>函数代码：</p>
+
+<p><code>c
+/*判断链表是否存在环 */
+bool HasCycle(List *L)
+{
+    List *slow,*fast ;  /* 一个走两步，一个走一步*/
+    slow = L ;
+    fast = L ;
+    while(fast&amp;&amp;fast-&gt;Next){
+        slow = slow-&gt;Next ;
+        fast = fast-&gt;Next-&gt;Next ;
+        if(slow == fast) break ;
+    }
+    return !(fast==NULL||fast-&gt;Next == NULL) ;
+}
+</code></p>
+
+<h2 id="section-4">5.单链表建环，无环链表变有环</h2>
+<p>将最后一个指针指向你所指定的结点。</p>
+
+<p>函数代码：</p>
+
+<p>```c
+/* 如果单链表没环，则给它制指定位置n建环操作 <em>/
+void CreateCycle(int n,List *L) 
+{
+    if(HasCycle(L)){
+        printf(“L has already cycle!”) ;
+        exit(-1) ;
+    }
+    List *entry,</em>pCurrent ; //环入口结点
+    int i ;</p>
+
+<pre><code>pCurrent = L ;
+for(i=0;pCurrent-&gt;Next;++i){
+    if(i==n)
+        entry = pCurrent ;
+    pCurrent = pCurrent-&gt;Next ;
+}
+if(i&lt;n){
+    printf("n is bigger than the length of L") ;
+    exit(-1) ;
+}else
+    pCurrent-&gt;Next = entry ; } ```
+</code></pre>
+
+<h2 id="section-5">6.如何知道环的长度?</h2>
+<p>快慢指针从第一次相遇开始到第二次相遇，慢指针走过的距离即环的长度。</p>
+
+<p>代码如下：</p>
+
+<p>```c
+/* 如果存在环，则输出其长度<em>/
+int LenCycle(List *L)
+{
+    int i,k ;
+    i=k=0 ;
+    if(HasCycle(L)){
+        List *slow,</em>fast ;
+        slow = L ;
+        fast = L-&gt;Next-&gt;Next ;</p>
+
+<pre><code>    while(i!=2){
+        if(i==1)
+            ++k ;
+        if(slow==fast){
+            ++i ;
+        }
+        slow = slow-&gt;Next ;
+        fast = fast-&gt;Next-&gt;Next ;
+    }
+}else{
+    printf("L hasn't cycle!\n") ;
+    exit(-1) ;
+}
+return k ; } ```
+</code></pre>
+
+<h2 id="section-6">7.如何找出环的连接点在哪里?</h2>
+<p>有定理：碰撞点p到连接点的距离=头指针到连接点的距离，因此，分别从碰撞点、头指针开始走，相遇的那个点就是连接点。</p>
+
+<p>代码实现：</p>
+
+<p>```c
+/* 输出环的链接点<em>/
+int EntryCycle(List *L)
+{
+    if(HasCycle(L)){
+        List *slow,</em>fast ;  /* 一个走两步，一个走一步*/
+        slow = L ;
+        fast = L ;
+        while(fast&amp;&amp;fast-&gt;Next){
+            slow = slow-&gt;Next ;
+            fast = fast-&gt;Next-&gt;Next ;
+            if(slow==fast) break ;
+            printf(“hello\n”) ;
+        }</p>
+
+<pre><code>    List *head = L ;
+
+    while(head!=slow){
+        head = head-&gt;Next ;
+        slow = slow-&gt;Next ;
+
+        printf("world\n") ;
+    }
+    return slow-&gt;elem ;
+}else{
+    printf("L hasn't cycle!") ;
+} } ```
+</code></pre>
+
+<h2 id="section-7">8.删除单链表中的重复元素</h2>
+<p>使用到两个指针，其中一个指针pCurrent从第一个元素开始遍历，另外一个指针run从pCurrent后一个数开始遍历。</p>
+
+<ul>
+  <li>如果存在run指向的数等于pCurrent指向的数则删除pCurrent指向的数，回到pCurrent遍历;</li>
+  <li>如果run走到链表末尾还没找到相等结点，则回到pCurrent遍历。</li>
+</ul>
+
+<p>代码如下：</p>
+
+<p>```c
+/* 删除相同的元素<em>/
+void DelSame(List *L)
+{
+    List *run,</em>pCurrent ;
+    pCurrent = L-&gt;Next ;</p>
+
+<pre><code>while(pCurrent){
+    run = pCurrent-&gt;Next ;
+    while(run){
+        if(pCurrent-&gt;elem == run-&gt;elem){
+            Delete(pCurrent-&gt;elem,L) ;
+            break ;
+        }
+        run = run-&gt;Next ;
+    }
+    pCurrent = pCurrent-&gt;Next ;
+} } ```
+</code></pre>
+
+<h2 id="section-8">所有代码汇总源程序</h2>
+
+<p>```c
+/<strong>**</strong><strong>**</strong><strong>**</strong><strong>**</strong><strong>**</strong><strong>**</strong><strong>**</strong><strong>**</strong><strong>**</strong><strong>**</strong><strong>**</strong><strong>**</strong>*
+	&gt; File Name: reverselist.c
+	&gt; Author: huanglei
+	&gt; Mail: huanglei2109@gmail.com 
+	&gt; Created Time: 2014年05月19日 星期一 12时44分36秒
+ <strong>**</strong><strong>**</strong><strong>**</strong><strong>**</strong><strong>**</strong><strong>**</strong><strong>**</strong><strong>**</strong><strong>**</strong><strong>**</strong><strong>**</strong><strong>**</strong>/</p>
+
+<h1 id="includestdioh">include<stdio.h></stdio.h></h1>
+<p>#include<stdlib.h>
+typedef struct Node
+{
+    int elem ;
+    Node *Next ;
+}List;
+void InitList(List *L) ;
+void Insert(int e,List *L) ;
+void Delete(int e,List *L) ;
+void PrintList(List L) ;</stdlib.h></p>
+
+<p>/* 链表反转  */
+void ReverseList(List *L) ;</p>
+
+<p>/* 求单链表倒数第N个数 */
+int NIndex(List L,int n) ;</p>
+
+<p>/* 输出单链表的中间结点*/
+int Mid(List L) ;</p>
+
+<p>/*判断链表是否存在环 */
+bool HasCycle(List *L) ;</p>
+
+<p>/* 如果单链表没环，则给它制指定位置n建环操作 */
+void CreateCycle(int n,List *L) ;</p>
+
+<p>/* 如果存在环，则输出其长度*/
+int LenCycle(List *L) ;</p>
+
+<p>/* 输出环的链接点*/
+int EntryCycle(List *L) ;</p>
+
+<p>/* 删除相同的元素*/
+void DelSame(List *L) ;</p>
+
+<p>main()
+{
+    List L ;
+    InitList(&amp;L) ;
+    Insert(1,&amp;L) ;
+    Insert(2,&amp;L) ;
+    Insert(3,&amp;L) ;
+    Insert(2,&amp;L) ;
+    Insert(5,&amp;L) ;
+    //Delete(1,&amp;L);
+    DelSame(&amp;L) ;
+    PrintList(L) ;
+    printf(“\n”) ;</p>
+
+<pre><code>ReverseList(&amp;L) ;
+PrintList(L) ;
+printf("\n") ;
+
+printf("%d\n",NIndex(L,2)) ;
+
+printf("%d\n",Mid(L)) ;
+
+if(HasCycle(&amp;L))
+    printf("L has cycle!\n") ;
+else
+    printf("L hasn't cycle\n") ;
+
+CreateCycle(2,&amp;L) ;
+if(HasCycle(&amp;L))
+    printf("L has cycle!\n") ;
+else
+    printf("L hasn't cycle\n") ;
+
+//CreateCycle(1,&amp;L) ; //会提示已经有环了，不能再创建
+
+printf("the length cycle is %d\n",LenCycle(&amp;L)) ;
+
+printf("the entry is %d\n",EntryCycle(&amp;L)) ; }
+</code></pre>
+
+<p>/* 链表反转  */
+void ReverseList(List *L)
+{
+    if(!L-&gt;Next-&gt;Next)
+        ;
+    else{
+        List *pTemp = L-&gt;Next-&gt;Next-&gt;Next ;
+        List *pMid = L-&gt;Next-&gt;Next ;
+        List *pCurrent = L-&gt;Next ;
+        L-&gt;Next-&gt;Next = NULL ;
+        while(pTemp){
+            pMid-&gt;Next = pCurrent ;
+            pCurrent = pMid ;
+            pMid = pTemp ;
+            pTemp = pTemp-&gt;Next ;
+        }
+        pMid-&gt;Next = pCurrent ;
+        L-&gt;Next = pMid ;
+    }
+}</p>
+
+<p>/* 求单链表倒数第N个数 <em>/
+int NIndex(List L,int n)
+{
+    List *fir,</em>sec ;
+    fir = L.Next ;
+    sec = L.Next ;
+    int i ;
+    for(i=0;sec;++i){
+        if(i&gt;=n){
+            fir = fir-&gt;Next ;
+            sec = sec-&gt;Next ;
+        }else
+            sec = sec-&gt;Next ;
+    }
+    return fir-&gt;elem ;
+}</p>
+
+<p>/* 输出单链表的中间结点<em>/
+int Mid(List L)
+{
+    List *fir,</em>sec ;
+    fir = L.Next ;
+    sec = L.Next ;
+    while(sec-&gt;Next&amp;&amp;sec-&gt;Next-&gt;Next){
+        fir = fir-&gt;Next ;
+        sec = sec-&gt;Next-&gt;Next ;
+    }
+    return fir-&gt;elem ;
+}</p>
+
+<p>/<em>判断链表是否存在环 */
+bool HasCycle(List *L)
+{
+    List *slow,</em>fast ;  /* 一个走两步，一个走一步*/
+    slow = L ;
+    fast = L ;
+    while(fast&amp;&amp;fast-&gt;Next){
+        slow = slow-&gt;Next ;
+        fast = fast-&gt;Next-&gt;Next ;
+        if(slow == fast) break ;
+    }
+    return !(fast==NULL||fast-&gt;Next == NULL) ;
+}</p>
+
+<p>/* 如果单链表没环，则给它制指定位置n建环操作 <em>/
+void CreateCycle(int n,List *L) 
+{
+    if(HasCycle(L)){
+        printf(“L has already cycle!”) ;
+        exit(-1) ;
+    }
+    List *entry,</em>pCurrent ; //环入口结点
+    int i ;</p>
+
+<pre><code>pCurrent = L ;
+for(i=0;pCurrent-&gt;Next;++i){
+    if(i==n)
+        entry = pCurrent ;
+    pCurrent = pCurrent-&gt;Next ;
+}
+if(i&lt;n){
+    printf("n is bigger than the length of L") ;
+    exit(-1) ;
+}else
+    pCurrent-&gt;Next = entry ; }
+</code></pre>
+
+<p>/* 如果存在环，则输出其长度<em>/
+int LenCycle(List *L)
+{
+    int i,k ;
+    i=k=0 ;
+    if(HasCycle(L)){
+        List *slow,</em>fast ;
+        slow = L ;
+        fast = L-&gt;Next-&gt;Next ;</p>
+
+<pre><code>    while(i!=2){
+        if(i==1)
+            ++k ;
+        if(slow==fast){
+            ++i ;
+        }
+        slow = slow-&gt;Next ;
+        fast = fast-&gt;Next-&gt;Next ;
+    }
+}else{
+    printf("L hasn't cycle!\n") ;
+    exit(-1) ;
+}
+return k ; }
+</code></pre>
+
+<p>/* 输出环的链接点<em>/
+int EntryCycle(List *L)
+{
+    if(HasCycle(L)){
+        List *slow,</em>fast ;  /* 一个走两步，一个走一步*/
+        slow = L ;
+        fast = L ;
+        while(fast&amp;&amp;fast-&gt;Next){
+            slow = slow-&gt;Next ;
+            fast = fast-&gt;Next-&gt;Next ;
+            if(slow==fast) break ;
+        }</p>
+
+<pre><code>    List *head = L ;
+
+    while(head!=slow){
+        head = head-&gt;Next ;
+        slow = slow-&gt;Next ;
+    }
+    return slow-&gt;elem ;
+}else{
+    printf("L hasn't cycle!") ;
+} }
+</code></pre>
+
+<p>/* 删除相同的元素<em>/
+void DelSame(List *L)
+{
+    List *run,</em>pCurrent ;
+    pCurrent = L-&gt;Next ;</p>
+
+<pre><code>while(pCurrent){
+    run = pCurrent-&gt;Next ;
+    while(run){
+        printf("hello\n") ;
+        if(pCurrent-&gt;elem == run-&gt;elem){
+            printf("world\n") ;
+            Delete(pCurrent-&gt;elem,L) ;
+            break ;
+        }
+        run = run-&gt;Next ;
+    }
+    pCurrent = pCurrent-&gt;Next ;
+} }
+</code></pre>
+
+<p>/* 链式存储链表的基本操作*/
+void InitList(List *L)
+{
+    L-&gt;Next = NULL ;
+}</p>
+
+<p>void Insert(int e,List <em>L)
+{
+    List *pCurrent ;
+    pCurrent = L ;
+    List *eNode = (List</em>)malloc(sizeof(struct Node)) ;
+    if(eNode==NULL){
+        printf(“out of space!”) ;
+        exit(-1) ;
+    }
+    for(;pCurrent-&gt;Next;pCurrent=pCurrent-&gt;Next)
+        ;
+    pCurrent-&gt;Next = eNode ;
+    eNode-&gt;elem = e ;
+}</p>
+
+<p>void PrintList(List L)
+{
+    List *pCurrent ;
+    pCurrent = L.Next ;
+    if(L.Next==NULL)
+        printf(“list is empty”) ;
+    else{
+        for(;pCurrent;pCurrent=pCurrent-&gt;Next)
+            printf(“%d-&gt;”,pCurrent-&gt;elem) ;
+    }
+}</p>
+
+<p>void Delete(int e ,List <em>L)
+{
+    List *pCurrent,</em>tmp ;
+    pCurrent = L ;
+    while(pCurrent-&gt;Next-&gt;elem!=e&amp;&amp;pCurrent-&gt;Next)
+        pCurrent = pCurrent-&gt;Next ;
+    if(!pCurrent-&gt;Next){
+        printf(“%d is not exit!\n”,e) ;
+    }else{
+        tmp = pCurrent-&gt;Next-&gt;Next ;
+        free(pCurrent-&gt;Next) ;
+        pCurrent-&gt;Next = tmp ;
+    }
+}
+```</p>
+
+<p>输出如下：
+&gt;1-&gt;3-&gt;2-&gt;4-&gt;5-&gt;</p>
+
+<blockquote>
+  <p>5-&gt;4-&gt;2-&gt;3-&gt;1-&gt;</p>
+</blockquote>
+
+<blockquote>
+  <p>3</p>
+</blockquote>
+
+<blockquote>
+  <p>2</p>
+</blockquote>
+
+<blockquote>
+  <p>L hasn’t cycle</p>
+</blockquote>
+
+<blockquote>
+  <p>L has cycle!</p>
+</blockquote>
+
+<blockquote>
+  <p>the length cycle is 4</p>
+</blockquote>
+
+<blockquote>
+  <p>the entry is 4</p>
+</blockquote>
+
+<p>乐此不疲～</p>

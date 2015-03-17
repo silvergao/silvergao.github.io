@@ -1,0 +1,38 @@
+<html>
+  <head>
+    <title>{{ page.title }} - {{ site.title }}</title>
+    {% include head.html %}
+    <!-- user defined js should behind the jquery -->
+    <script type="text/javascript" src="{{ site.baseurl }}/javascripts/jp.js"></script>
+    <script type="text/javascript" src="{{ site.baseurl }}/javascripts/jp.js"></script>
+    <link href="{{ site.baseurl }}/javascripts/jplayer/dist/skin/blue.monday/css/jplayer.blue.monday.min.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="{{ site.baseurl }}/javascripts/jplayer/lib/jquery.min.js"></script>
+    <script type="text/javascript" src="{{ site.baseurl }}/javascripts/jplayer/dist/jplayer/jquery.jplayer.min.js"></script>
+  </head>
+  <body>
+    {% include header.html %}
+    <div id='container'>
+      {% include links.html %}
+      {% include post_pagination.html %}
+      <div class="content">
+        <section class='post'>
+          <h1>
+            <div class='date'>{{ page.date | date_to_string }}</div>
+            {{ page.title }}
+          </h1>
+          {{ content }}
+          {% include signoff.html %}
+        </section>
+      </div>
+      <div class="block">
+        {% include youyan.html %}
+      </div>
+      {% include links.html %}
+    </div>
+    {% include footer.html %}
+  </body>
+ 
+</html>
+
+
+

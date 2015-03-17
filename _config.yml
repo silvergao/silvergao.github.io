@@ -1,0 +1,26 @@
+title:            Cuicui's Blog 
+description:      Just work much harder !
+url:              
+baseurl:          # Base url. ( if use subdirectory-like URL )
+signoff:          cuicui # Your name.
+google_analytics_id: # set tracking, UA-XXXX-Y.
+encoding: utf-8
+links:
+  
+  - name:         首页
+    url:          /
+  - name:         我的作品
+    url:          /tags
+  - name:         我的简历
+    url:          /me/jianli.html
+  - name:         联系我
+    url:          /about
+
+highlighter:      pygments
+pygments:         true
+permalink:        pretty
+markdown:         redcarpet
+redcarpet:
+  extensions:     [autolink, tables]
+comments:
+   provider:    uyan 
