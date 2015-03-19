@@ -601,6 +601,7 @@
 				play: {
 					key: 80, // p
 					fn: function(f) {
+						alert("======play======");
 						if(f.status.paused) {
 							f.play();
 						} else {
