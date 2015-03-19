@@ -1,10 +1,15 @@
-$(document).ready(function() {
+var baseurl = "../../../../../../"
+var tagname = "jplayer"
+var initInstance = false;
+$(document).ready(function() { 
+    if (initInstance) return;
+    initInstance = true;
     $.ajax({
 		   type: "GET",
-		   url: "../../../../../../javascripts/jp.html",
+		   url: baseurl + "javascripts/jp.html",
 		   dataType: "html",
 		   success: function(data){
-               var objs = $("jplayer");
+               var objs = $(tagname);
                if (objs.size() <= 0)
                     return;
                for (var i in objs) {
@@ -22,16 +27,15 @@ $(document).ready(function() {
         $(obj).jPlayer({
             ready: function () {
                 $(this).jPlayer("setMedia", {
-                    title: "Big Buck Bunny Trailer",
-                    mp4: "./video/tt.mp4",
-                    flv: "https://github.com/kzjkaila/kzjkaila.github.io/raw/master/jplayer/video/tt.mp4",
-                    poster: "http://www.jplayer.org/video/poster/Big_Buck_Bunny_Trailer_480x270.png"
+                    title: $(tagname).attr("title"),
+                    mp4: baseurl + $(tagname).attr("url"),
+                    poster: baseurl + $(tagname).attr("poster")
                 });
             },
             play: function() { // To avoid multiple jPlayers playing together.
                 $(this).jPlayer("pauseOthers");
             },
-            swfPath: "./dist/jplayer",
+            swfPath: baseurl + "javascripts/jplayer/dist/jplayer",
             supplied: "mp4",
             globalVolume: true,
             useStateClassSkin: true,
