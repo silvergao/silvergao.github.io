@@ -28,9 +28,9 @@ $(document).ready(function() {
         $(obj).jPlayer({
             ready: function () {
                 $(this).jPlayer("setMedia", {
-                    title: $(tagname).attr("title"),
-                    mp4: baseurl + "videos/jian-li-shi-ping.mp4",
-                    poster: baseurl + $(tagname).attr("poster")
+                    title: "TTTTTTTTTTT",//$(tagname).attr("title"),
+                    mp4: "../../../../../../videos/jian-li-shi-ping.mp4",
+                    poster: ""//baseurl + $(tagname).attr("poster")
                 });
             },
             play: function() { // To avoid multiple jPlayers playing together.
