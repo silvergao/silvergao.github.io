@@ -12,7 +12,7 @@ links:
   - name:         我的作品
     url:          /tags
   - name:         我的简历
-    url:          /me/jianli.html
+    url:          /jianli.html
   - name:         联系我
     url:          /about
 
