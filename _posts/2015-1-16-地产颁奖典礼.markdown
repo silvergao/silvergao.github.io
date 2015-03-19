@@ -1,0 +1,8 @@
+---
+layout: post
+title:  "地产颁奖典礼"
+date:   2014-03-16 11:26:07
+categories: 个人项目
+---
+
+<jplayer url="videos/di-chan-ban-jiang.mp4" title="地产颁奖典礼"></jplayer>
