@@ -1,9 +1,9 @@
 var baseurl = "../../../../../../"
 var tagname = "jplayer"
-var initInstance = false;
+//var initInstance = false;
 $(document).ready(function() { 
-    if (initInstance) return;
-    initInstance = true;
+    //if (initInstance) return;
+    //initInstance = true;
     $.ajax({
 		   type: "GET",
 		   url: baseurl + "javascripts/jp.html",
