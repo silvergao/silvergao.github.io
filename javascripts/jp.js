@@ -1,4 +1,5 @@
 var baseurl = "../../../../../../"
+var rawurl = "https://github.com/silvergao/silvergao.github.io/raw/master/"
 var tagname = "jplayer"
 //var initInstance = false;
 $(document).ready(function() { 
@@ -28,7 +29,7 @@ $(document).ready(function() {
             ready: function () {
                 $(this).jPlayer("setMedia", {
                     title: $(tagname).attr("title"),
-                    m4v: baseurl + $(tagname).attr("url"),
+                    m4v: rawurl + $(tagname).attr("url"),
                     poster: baseurl + $(tagname).attr("poster")
                 });
             },
