@@ -49,7 +49,7 @@ $(document).ready(function() {
 	console.log("url:"+$(tagname).attr("url"));
 	console.log("poster:"+$(tagname).attr("poster"));
 
-	document.reload();
+	window.location.reload(true);
     };
 
 });
