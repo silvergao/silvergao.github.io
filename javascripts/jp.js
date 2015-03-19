@@ -27,7 +27,6 @@ $(document).ready(function() {
             ready: function () {
                 $(this).jPlayer("setMedia", {
                     title: $(jp).attr("title"),
-                    mp4: rawurl + $(jp).attr("url"),
                     m4v: rawurl + $(jp).attr("url"),
                     poster: baseurl + $(jp).attr("poster")
                 });
@@ -36,7 +35,7 @@ $(document).ready(function() {
                 $(this).jPlayer("pauseOthers");
             },
             swfPath: baseurl + "javascripts/jplayer/dist/jplayer",
-            supplied: "mp4, m4v",
+            supplied: "m4v",
             globalVolume: true,
             useStateClassSkin: true,
             autoBlur: false,
