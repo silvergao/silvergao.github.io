@@ -15,6 +15,7 @@ $(document).ready(function() {
                for (var i in objs) {
                    $(objs.get(i)).append(data);
                    initPlayer($("#jquery_jplayer_1").get(i));
+		   $("#jplayer_inspector").jPlayerInspector({jPlayer:$("#jquery_jplayer_1")});
                }
 		   },
 		   error: function(){
@@ -48,7 +49,6 @@ $(document).ready(function() {
 	console.log("title:"+$(tagname).attr("title"));
 	console.log("url:"+$(tagname).attr("url"));
 	console.log("poster:"+$(tagname).attr("poster"));
-	$("#jplayer_inspector").jPlayerInspector({jPlayer:obj});
     };
 
 });
