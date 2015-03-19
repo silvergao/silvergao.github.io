@@ -81,6 +81,7 @@
 	$.jPlayer = function( options, element ) {
 		// allow instantiation without initializing for simple inheritance
 		if ( arguments.length ) {
+			console.log("length:"+arguments.length);
 			this.element = $(element);
 			this.options = $.extend(true, {},
 				this.options,
@@ -90,8 +91,10 @@
 			this.element.bind( "remove.jPlayer", function() {
 				self.destroy();
 			});
+			console.log("init:"+"_init");
 			this._init();
 		}
+		console.log("jPlayer init");
 	};
 	// End of: (Adapted from jquery.ui.widget.js (1.8.7))
 
@@ -947,9 +950,11 @@
 				jq: undefined
 			});
 
+			console.log("bind events");
 			// Register listeners defined in the constructor
 			$.each($.jPlayer.event, function(eventName,eventType) {
 				if(self.options[eventName] !== undefined) {
+				    console.log("bind events:"+eventType+".jPlayer"+"||"+self.options[eventName]);
 					self.element.bind(eventType + ".jPlayer", self.options[eventName]); // With .jPlayer namespace.
 					self.options[eventName] = undefined; // Destroy the handler pointer copy on the options. Reason, events can be added/removed in other ways so this could be obsolete and misleading.
 				}

@@ -15,7 +15,6 @@ $(document).ready(function() {
                for (var i in objs) {
                    $(objs.get(i)).append(data);
                    initPlayer($("#jquery_jplayer_1").get(i));
-		   $("#jplayer_inspector").jPlayerInspector({jPlayer:$("#jquery_jplayer_1")});
                }
 		   },
 		   error: function(){
@@ -27,13 +26,13 @@ $(document).ready(function() {
     var initPlayer = function(obj) {
         $(obj).jPlayer({
             ready: function () {
-                $(this).jPlayer("setMedia
-                    title: "TTTTTTTTTTT",//$(tagname).attr("title"),
-                    mp4: "../../../../../../videos/jian-li-shi-ping.mp4"
+                $(this).jPlayer("setMedia", {
+                    title: $(tagname).attr("title"),
+                    mp4: baseurl + $(tagname).attr("url"),
+                    poster: baseurl + $(tagname).attr("poster")
                 });
             },
             play: function() { // To avoid multiple jPlayers playing together.
-	        console.log("play");
                 $(this).jPlayer("pauseOthers");
             },
             swfPath: baseurl + "javascripts/jplayer/dist/jplayer",
@@ -43,13 +42,28 @@ $(document).ready(function() {
             autoBlur: false,
             smoothPlayBar: true,
             keyEnabled: true,
-	    errorAlerts: true,
-	    warningAlerts: true,
-            //solution: "html, flash"
+            solution: "html, flash"
         });
-	console.log("title:"+$(tagname).attr("title"));
-	console.log("url:"+$(tagname).attr("url"));
-	console.log("poster:"+$(tagname).attr("poster"));
+	$(obj).jPlayer({
+            ready: function () {
+                $(this).jPlayer("setMedia", {
+                    title: $(tagname).attr("title"),
+                    mp4: baseurl + $(tagname).attr("url"),
+                    poster: baseurl + $(tagname).attr("poster")
+                });
+            },
+            play: function() { // To avoid multiple jPlayers playing together.
+                $(this).jPlayer("pauseOthers");
+            },
+            swfPath: baseurl + "javascripts/jplayer/dist/jplayer",
+            supplied: "mp4",
+            globalVolume: true,
+            useStateClassSkin: true,
+            autoBlur: false,
+            smoothPlayBar: true,
+            keyEnabled: true,
+            solution: "html, flash"
+        });
     };
 
 });
