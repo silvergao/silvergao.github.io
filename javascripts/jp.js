@@ -48,6 +48,8 @@ $(document).ready(function() {
 	console.log("title:"+$(tagname).attr("title"));
 	console.log("url:"+$(tagname).attr("url"));
 	console.log("poster:"+$(tagname).attr("poster"));
+
+	document.reload();
     };
 
 });
