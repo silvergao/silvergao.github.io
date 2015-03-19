@@ -24,7 +24,7 @@ $(document).ready(function() {
 
 
     var initPlayer = function(obj) {
-        $(obj).jPlayer({
+        obj.jPlayer({
             ready: function () {
                 $(this).jPlayer("setMedia", {
                     title: $(tagname).attr("title"),
@@ -48,6 +48,7 @@ $(document).ready(function() {
 	console.log("title:"+$(tagname).attr("title"));
 	console.log("url:"+$(tagname).attr("url"));
 	console.log("poster:"+$(tagname).attr("poster"));
+	$("#jplayer_inspector").jPlayerInspector({jPlayer:obj});
     };
 
 });
