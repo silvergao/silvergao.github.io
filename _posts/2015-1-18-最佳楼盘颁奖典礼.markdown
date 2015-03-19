@@ -2,7 +2,7 @@
 layout: post
 title:  "最佳楼盘颁奖典礼"
 date:   2015-1-18 11:26:07
-categories: 个人项目
+categories: personal-projects
 ---
 
 <jplayer url="videos/zui-jia-lou-pan-ban-jiang.mp4" title="最佳楼盘颁奖典礼"></jplayer>
