@@ -48,7 +48,7 @@ $(document).ready(function() {
 
     var initVideoSrc = function(obj, jp) {
 	$(obj).append("如果无法观看视频, 请点击<a href=\"" + baseurl + $(jp).attr("url") +"\">" + $(jp).attr("title") + "</a>" +
-	"在线观看(或点击<a href=\"" + rawurl + $(jp).attr("url") +"\">下载</a>");
+	"在线观看(或点击<a href=\"" + rawurl + $(jp).attr("url") +"\">下载</a>)");
     };
 
 });
