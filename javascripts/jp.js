@@ -24,7 +24,7 @@ $(document).ready(function() {
 
 
     var initPlayer = function(obj) {
-        obj.jPlayer({
+        $(obj).jPlayer({
             ready: function () {
                 $(this).jPlayer("setMedia", {
                     title: $(tagname).attr("title"),
