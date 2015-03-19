@@ -9,30 +9,33 @@
     <script type="text/javascript" src="{{ site.baseurl }}/javascripts/jplayer/dist/add-on/jquery.jplayer.inspector.min.js"></script>
     </head>
 
-    <script type="text/javascript">
-    //<![CDATA[
-    $(document).ready(function(){
+<script type="text/javascript">
+//<![CDATA[
+$(document)
+	.ready(
+			function() {
 
-		    $("#jquery_jplayer_1").jPlayer({
-ready: function () {
+			$("#jquery_jplayer_1").jPlayer({
+ready : function() {
 $(this).jPlayer("setMedia", {
-title: "Big Buck Bunny Trailer",
-mp4: "../../../../../../videos/jian-li-shi-ping.mp4",
-poster: "http://www.jplayer.org/video/poster/Big_Buck_Bunny_Trailer_480x270.png"
+title : "Big Buck Bunny Trailer",
+mp4 : "../../../../../../videos/jian-li-shi-ping.mp4",
+poster : "http://www.jplayer.org/video/poster/Big_Buck_Bunny_Trailer_480x270.png"
 });
 },
-play: function() { // To avoid multiple jPlayers playing together.
+play : function() { // To avoid multiple jPlayers playing together.
 $(this).jPlayer("pauseOthers");
 },
-swfPath: "../../../../../../javascripts/jplayer/dist/jplayer",
-supplied: "mp4",
-globalVolume: true,
-useStateClassSkin: true,
-autoBlur: false,
-smoothPlayBar: true,
-keyEnabled: true
-		    });
-		    });
+swfPath : "../../../../../../javascripts/jplayer/dist/jplayer",
+supplied : "mp4",
+globalVolume : true,
+useStateClassSkin : true,
+autoBlur : false,
+smoothPlayBar : true,
+keyEnabled : true,
+solution: "html"
+});
+});
 </script>
   <body>
     {% include header.html %}
