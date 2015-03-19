@@ -28,7 +28,7 @@ $(document).ready(function() {
             ready: function () {
                 $(this).jPlayer("setMedia", {
                     title: $(tagname).attr("title"),
-                    mp4: baseurl + $(tagname).attr("url"),
+                    m4v: baseurl + $(tagname).attr("url"),
                     poster: baseurl + $(tagname).attr("poster")
                 });
             },
@@ -36,7 +36,7 @@ $(document).ready(function() {
                 $(this).jPlayer("pauseOthers");
             },
             swfPath: baseurl + "javascripts/jplayer/dist/jplayer",
-            supplied: "mp4",
+            supplied: "m4v",
             globalVolume: true,
             useStateClassSkin: true,
             autoBlur: false,
