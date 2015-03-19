@@ -1,10 +1,7 @@
 var baseurl = "../../../../../../"
 var rawurl = "https://github.com/silvergao/silvergao.github.io/raw/master/"
 var tagname = "jplayer"
-//var initInstance = false;
 $(document).ready(function() { 
-    //if (initInstance) return;
-    //initInstance = true;
     $.ajax({
 		   type: "GET",
 		   url: baseurl + "javascripts/jp.html",
@@ -15,7 +12,8 @@ $(document).ready(function() {
                     return;
                for (var i in objs) {
                    $(objs.get(i)).append(data);
-                   initPlayer($("#jquery_jplayer_1").get(i));
+                   initPlayer($("#jquery_jplayer_1").get(i), objs.get(i));
+		   initVideoSrc($("#video-src").get(i), objs.get(i));
                }
 		   },
 		   error: function(){
@@ -24,14 +22,14 @@ $(document).ready(function() {
 		});
 
 
-    var initPlayer = function(obj) {
+    var initPlayer = function(obj, jp) {
         $(obj).jPlayer({
             ready: function () {
                 $(this).jPlayer("setMedia", {
-                    title: $(tagname).attr("title"),
-                    mp4: rawurl + $(tagname).attr("url"),
-                    m4v: rawurl + $(tagname).attr("url"),
-                    poster: baseurl + $(tagname).attr("poster")
+                    title: $(jp).attr("title"),
+                    mp4: rawurl + $(jp).attr("url"),
+                    m4v: rawurl + $(jp).attr("url"),
+                    poster: baseurl + $(jp).attr("poster")
                 });
             },
             play: function() { // To avoid multiple jPlayers playing together.
@@ -46,26 +44,10 @@ $(document).ready(function() {
             keyEnabled: true,
             solution: "html, flash"
         });
-	$(obj).jPlayer({
-            ready: function () {
-                $(this).jPlayer("setMedia", {
-                    title: $(tagname).attr("title"),
-                    mp4: baseurl + $(tagname).attr("url"),
-                    poster: baseurl + $(tagname).attr("poster")
-                });
-            },
-            play: function() { // To avoid multiple jPlayers playing together.
-                $(this).jPlayer("pauseOthers");
-            },
-            swfPath: baseurl + "javascripts/jplayer/dist/jplayer",
-            supplied: "mp4",
-            globalVolume: true,
-            useStateClassSkin: true,
-            autoBlur: false,
-            smoothPlayBar: true,
-            keyEnabled: true,
-            solution: "html, flash"
-        });
+    };
+
+    var initVideoSrc = function(obj, jp) {
+	$(obj).append("<a href=\"" + rawurl + $(jp).attr("url") +"\">" + $(jp).attr("title") + "</a>");
     };
 
 });
