@@ -33,6 +33,7 @@ $(document).ready(function() {
                 });
             },
             play: function() { // To avoid multiple jPlayers playing together.
+	        console.log("play");
                 $(this).jPlayer("pauseOthers");
             },
             swfPath: baseurl + "javascripts/jplayer/dist/jplayer",
@@ -44,26 +45,9 @@ $(document).ready(function() {
             keyEnabled: true,
             solution: "html, flash"
         });
-	$(obj).jPlayer({
-            ready: function () {
-                $(this).jPlayer("setMedia", {
-                    title: $(tagname).attr("title"),
-                    mp4: baseurl + $(tagname).attr("url"),
-                    poster: baseurl + $(tagname).attr("poster")
-                });
-            },
-            play: function() { // To avoid multiple jPlayers playing together.
-                $(this).jPlayer("pauseOthers");
-            },
-            swfPath: baseurl + "javascripts/jplayer/dist/jplayer",
-            supplied: "mp4",
-            globalVolume: true,
-            useStateClassSkin: true,
-            autoBlur: false,
-            smoothPlayBar: true,
-            keyEnabled: true,
-            solution: "html, flash"
-        });
+	console.log("title:"+$(tagname).attr("title"));
+	console.log("url:"+$(tagname).attr("url"));
+	console.log("poster:"+$(tagname).attr("poster"));
     };
 
 });
