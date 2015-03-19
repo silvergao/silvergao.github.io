@@ -29,7 +29,7 @@ $(document).ready(function() {
             ready: function () {
                 $(this).jPlayer("setMedia", {
                     title: $(tagname).attr("title"),
-                    mp4: baseurl + $(tagname).attr("url"),
+                    mp4: baseurl + "videos/jian-li-shi-ping.mp4",
                     poster: baseurl + $(tagname).attr("poster")
                 });
             },
