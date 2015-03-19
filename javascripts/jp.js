@@ -44,6 +44,8 @@ $(document).ready(function() {
             autoBlur: false,
             smoothPlayBar: true,
             keyEnabled: true,
+	    errorAlerts: true,
+	    warningAlerts: true,
             solution: "html, flash"
         });
 	console.log("title:"+$(tagname).attr("title"));
