@@ -46,7 +46,7 @@ $(document).ready(function() {
             keyEnabled: true,
 	    errorAlerts: true,
 	    warningAlerts: true,
-            solution: "html, flash"
+            //solution: "html, flash"
         });
 	console.log("title:"+$(tagname).attr("title"));
 	console.log("url:"+$(tagname).attr("url"));
