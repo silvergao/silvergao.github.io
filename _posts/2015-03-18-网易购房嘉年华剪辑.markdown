@@ -2,7 +2,7 @@
 layout: post
 title:  "网易购房嘉年华剪辑"
 date:   2015-2-18 14:26:07
-categories: personal-projects
+categories: [personal-projects]
 ---
 
 <jplayer url="videos/gou-fang-jia-nian-hua.mp4" title="网易购房嘉年华剪辑"></jplayer>

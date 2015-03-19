@@ -3,10 +3,10 @@ layout: index
 title:  Categories
 ---
 
-{% for tag in site.tags %}
-  <h3 id="{{ tag[0] }}" class="vlist">{{ tag[0] }}</h3>
+{% for categories in site.categories %}
+  <h3 id="{{ categories[0] }}" class="vlist">{{ categories[0] }}</h3>
   <ul>
-    {% for post in tag[1] %}
+    {% for post in categories[1] %}
       <li style="list-style-type: none; padding: 2px">
         <span>{{ post.date | date:"%d %b %Y" }}</span> &nbsp;
         <a href="{{ post.url }}">{{ post.title }}</a>
