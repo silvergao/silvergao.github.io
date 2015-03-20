@@ -1,0 +1,35 @@
+<html>
+  <head>
+    <title>{{ page.title }} - {{ site.title }}</title>
+    {% include head.html %}
+    <!-- user defined js should behind the jquery -->
+    <script type="text/javascript" src="{{ site.baseurl }}/javascripts/jp.js"></script>
+    <link href="{{ site.baseurl }}/javascripts/jplayer/dist/skin/blue.monday/css/jplayer.blue.monday.min.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="{{ site.baseurl }}/javascripts/jplayer/lib/jquery.min.js"></script>
+    <script type="text/javascript" src="{{ site.baseurl }}/javascripts/jplayer/dist/jplayer/jquery.jplayer.min.js"></script>
+  </head>
+  <body>
+    {% include header.html %}
+    <div id='container'>
+      {% include links.html %}
+      <div class="content">
+        <section class='post'>
+		  <center>
+		  <p>开始找工作了!</p>
+          <img src="{{ site.baseurl }}/docs/jianli.jpg"></img>
+          </center>
+		  {% include signoff.html %}
+        </section>
+      </div>
+      <div class="block">
+        {% include youyan.html %}
+      </div>
+      {% include links.html %}
+    </div>
+    {% include footer.html %}
+  </body>
+ 
+</html>
+
+
+
