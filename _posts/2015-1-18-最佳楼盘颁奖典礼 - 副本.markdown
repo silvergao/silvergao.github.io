@@ -71,5 +71,5 @@ C家门外 日
 字幕：
 END
 ```
-下载[富有纪念意义的照片.doc]({{ site.baseurl }}/docs/juben/富有纪念意义的照片.doc)
+``下载`` [富有纪念意义的照片.doc]({{ site.baseurl }}/docs/juben/富有纪念意义的照片.doc)
 
