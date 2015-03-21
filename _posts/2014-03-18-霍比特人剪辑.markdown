@@ -2,7 +2,7 @@
 layout: post
 title:  "霍比特人剪辑"
 date:   2014-3-18 14:26:07
-categories: [personal-projects]
+categories: [个人作品]
 ---
 
 <jplayer url="videos/huo-bi-te-ren-jian-ji.mp4" title="霍比特人剪辑"></jplayer>
