@@ -71,4 +71,4 @@ C家门外 日
 END
 
 富有纪念意义的照片.doc
-[富有纪念意义的照片.doc][docs/juben/富有纪念意义的照片.doc]
+[富有纪念意义的照片.doc]: docs/juben/富有纪念意义的照片.doc
