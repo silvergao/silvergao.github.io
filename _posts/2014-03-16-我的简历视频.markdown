@@ -2,7 +2,7 @@
 layout: post
 title:  "我的简历视频"
 date:   2014-03-16 11:26:07
-categories: [personal-projects]
+categories: [个人项目]
 ---
 
 <jplayer url="videos/jian-li-shi-ping.mp4" title="我的简历视频"></jplayer>
