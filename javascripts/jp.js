@@ -40,7 +40,12 @@ $(document).ready(function() {
             useStateClassSkin: true,
             autoBlur: false,
             smoothPlayBar: true,
-            keyEnabled: true,
+	    keyEnabled: true,
+	    size: {
+		width: "100%",
+		height: "360px",
+		cssClass: "jp-video-360p"
+	    },
             solution: "html, flash"
         });
     };
