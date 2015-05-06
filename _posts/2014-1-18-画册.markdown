@@ -1,0 +1,18 @@
+---
+layout: post
+title: 画册
+date:   2014-1-18 11:26:07
+categories: [画册]
+---
+![图1]({{ site.baseurl }}/docs/huace/1.jpg)
+![图2]({{ site.baseurl }}/docs/huace/2.jpg)
+![图3]({{ site.baseurl }}/docs/huace/3.jpg)
+![图4]({{ site.baseurl }}/docs/huace/4.jpg)
+![图5]({{ site.baseurl }}/docs/huace/5.jpg)
+![图6]({{ site.baseurl }}/docs/huace/6.jpg)
+![图7]({{ site.baseurl }}/docs/huace/7.jpg)
+![图8]({{ site.baseurl }}/docs/huace/8.jpg)
+![图9]({{ site.baseurl }}/docs/huace/9.jpg)
+![图10]({{ site.baseurl }}/docs/huace/10.jpg)
+
+
