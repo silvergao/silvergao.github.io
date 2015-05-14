@@ -1,0 +1,8 @@
+---
+layout: post
+title:  "徐徐而闻木兰香"
+date:   2014-4-18 11:26:07
+categories: [公司个人完成项目]
+---
+
+<jplayer url="videos/xu-xu-er-wen-mu-lan-hua.mp4" title="徐徐而闻木兰香"></jplayer>
