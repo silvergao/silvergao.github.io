@@ -6,9 +6,9 @@ categories: [摄影作品]
 ---
 ![图1]({{ site.baseurl }}/images/sheying/1.jpg)
 ![图2]({{ site.baseurl }}/images/sheying/2.jpg)
-![图3]({{ site.baseurl }}/images/sheying/3.jpg)
-![图4]({{ site.baseurl }}/images/sheying/4.jpg)
-![图5]({{ site.baseurl }}/images/sheying/5.jpg)
+![图3]({{ site.baseurl }}/images/sheying/3.JPG)
+![图4]({{ site.baseurl }}/images/sheying/4.JPG)
+![图5]({{ site.baseurl }}/images/sheying/5.JPG)
 ![图6]({{ site.baseurl }}/images/sheying/6.jpg)
 ![图7]({{ site.baseurl }}/images/sheying/7.jpg)
 
