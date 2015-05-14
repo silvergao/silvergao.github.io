@@ -1,0 +1,8 @@
+---
+layout: post
+title:  "仿MG片头作品"
+date:   2013-5-11 14:26:07
+categories: [个人作品 - 视频]
+---
+
+<jplayer url="videos/fang-mg-pian-tou.mp4" title="仿MG片头作品"></jplayer>
