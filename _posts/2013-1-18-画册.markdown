@@ -1,8 +1,8 @@
 ---
 layout: post
 title: 画册
-date:   2014-1-18 11:26:07
-categories: [画册]
+date:   2013-1-18 11:26:07
+categories: [个人作品 - 画册]
 ---
 ![图1]({{ site.baseurl }}/docs/huace/1.jpg)
 ![图2]({{ site.baseurl }}/docs/huace/2.jpg)

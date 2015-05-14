@@ -1,8 +1,8 @@
 ---
 layout: post
 title: 摄影作品
-date:   2014-1-18 11:26:07
-categories: [摄影作品]
+date:   2013-3-18 11:26:07
+categories: [个人作品 - 摄影]
 ---
 ![图1]({{ site.baseurl }}/images/sheying/1.jpg)
 ![图2]({{ site.baseurl }}/images/sheying/2.jpg)
