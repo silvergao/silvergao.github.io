@@ -11,5 +11,17 @@ categories: [个人作品 - 摄影]
 ![图5]({{ site.baseurl }}/images/sheying/5.JPG)
 ![图6]({{ site.baseurl }}/images/sheying/6.jpg)
 ![图7]({{ site.baseurl }}/images/sheying/7.jpg)
+![图8]({{ site.baseurl }}/docs/huace/1.jpg)
+![图9]({{ site.baseurl }}/docs/huace/2.jpg)
+![图10]({{ site.baseurl }}/docs/huace/3.jpg)
+![图11]({{ site.baseurl }}/docs/huace/4.jpg)
+![图12]({{ site.baseurl }}/docs/huace/5.jpg)
+![图13]({{ site.baseurl }}/docs/huace/6.jpg)
+![图14]({{ site.baseurl }}/docs/huace/7.jpg)
+![图15]({{ site.baseurl }}/docs/huace/8.jpg)
+![图16]({{ site.baseurl }}/docs/huace/9.jpg)
+![图17]({{ site.baseurl }}/docs/huace/10.jpg)
+
+
 
 
