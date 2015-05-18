@@ -1,8 +1,8 @@
 ﻿---
 layout: post
-title: 《原谅青春的荷尔蒙》剧本
+title: 手绘漫画
 date:   2012-5-16 11:26:07
-categories: [手绘练习 - 漫画]
+categories: [手绘漫画]
 ---
 ![图1]({{ site.baseurl }}/docs/manhua/1.jpg)
 ![图2]({{ site.baseurl }}/docs/manhua/2.jpg)
