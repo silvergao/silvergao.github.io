@@ -1,8 +1,0 @@
----
-layout: post
-title:  "中建宣传片"
-date:   2013-11-4 10:26:07
-categories: [公司个人完成项目]
----
-
-<jplayer url="videos/zhong-jian.mp4" title="中建宣传片"></jplayer>
