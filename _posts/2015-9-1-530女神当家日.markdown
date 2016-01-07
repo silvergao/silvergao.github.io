@@ -1,0 +1,8 @@
+---
+layout: post
+title:  "530女神当家日"
+date:   2015-9-1 11:26:07
+categories: [公司完成项目]
+---
+
+<jplayer url="videos/nv-shen-dang-jia-ri.mp4" title="530女神当家日"></jplayer>

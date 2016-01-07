@@ -4,13 +4,6 @@ title: 摄影作品
 date:   2013-3-18 11:26:07
 categories: [个人作品 - 摄影]
 ---
-![图1]({{ site.baseurl }}/images/sheying/1.jpg)
-![图2]({{ site.baseurl }}/images/sheying/2.jpg)
-![图3]({{ site.baseurl }}/images/sheying/3.JPG)
-![图4]({{ site.baseurl }}/images/sheying/4.JPG)
-![图5]({{ site.baseurl }}/images/sheying/5.JPG)
-![图6]({{ site.baseurl }}/images/sheying/6.jpg)
-![图7]({{ site.baseurl }}/images/sheying/7.jpg)
 ![图8]({{ site.baseurl }}/docs/huace/1.jpg)
 ![图9]({{ site.baseurl }}/docs/huace/2.jpg)
 ![图10]({{ site.baseurl }}/docs/huace/3.jpg)

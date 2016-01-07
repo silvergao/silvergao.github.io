@@ -1,8 +1,0 @@
----
-layout: post
-title:  "反家暴公益片"
-date:   2015-4-1 11:26:07
-categories: [毕业设计]
----
-
-<jplayer url="videos/bi-she-zuo-pin-fan-jia-bao-gong-yi-pian.mp4" title="反家暴公益片"></jplayer>
