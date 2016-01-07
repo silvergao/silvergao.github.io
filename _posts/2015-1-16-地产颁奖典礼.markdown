@@ -2,7 +2,7 @@
 layout: post
 title:  "地产颁奖典礼"
 date:   2015-01-16 11:26:07
-categories: [公司个人完成项目]
+categories: [公司完成项目]
 ---
 
 <jplayer url="videos/di-chan-ban-jiang.mp4" title="地产颁奖典礼"></jplayer>
