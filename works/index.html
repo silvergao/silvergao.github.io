@@ -402,6 +402,7 @@ aside .block a{margin:0;}
 }
 #timeline li.item article p.video{
 	text-indent: 0em;
+	padding-bottom: 100%;
 }
 
 @media screen and (min-width:1024px) {
@@ -593,7 +594,7 @@ aside .block a{margin:0;}
 					{% endif %}
 					<article>
 					{{item.content}}
-					{% if item.video %}<p class="video"><iframe class="video_iframe" style="z-index:1;padding-bottom: 70%;" src="{{item.video.src}}" allowfullscreen="" frameborder="0" width="{{item.video.width}}" height="{{item.video.height}}"></iframe></p>{% endif %}
+					{% if item.video %}<p class="video"><iframe class="video_iframe" style="z-index:1;" src="{{item.video.src}}" allowfullscreen="" frameborder="0" width="{{item.video.width}}" height="{{item.video.height}}"></iframe></p>{% endif %}
 					</article>
 				</div>
 			</li>
