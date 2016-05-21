@@ -10,9 +10,9 @@ figures:
     height: 69
 public: false
 video: {
-	src: "http://v.qq.com/iframe/player.html?vid=t01662frswa&amp;width=&amp;height=537&amp;auto=0",
+	src: "http://v.qq.com/iframe/player.html?vid=t01662frswa&amp;width=&amp;height=&amp;auto=0",
 	width: 100%,
-	height: auto
+	height: 100%
 }
 ---
 
