@@ -404,9 +404,6 @@ aside .block a{margin:0;}
 	text-indent: 0em;
 }
 /*reset.css*/
-body{
-	background: white;
-}
 /*-------------------------*/
 .video-fluid{
 	position: relative;
@@ -619,11 +616,11 @@ body{
 					<article>
 					{{item.content}}
 					{% if item.video %}
-					        <div class="video-fluid widescreen youku">
-            <div>
-                <iframe class="video_iframe" style="z-index:1;" src="{{item.video.src}}" allowfullscreen="" frameborder="0" width="{{item.video.width}}" height="{{item.video.height}}"></iframe>
-            </div>
-        </div>{% endif %}
+					<div class="video-fluid widescreen youku">
+					<div>
+						<iframe class="video_iframe" style="z-index:1;" src="{{item.video.src}}" allowfullscreen="" frameborder="0" width="100%" height="100%"></iframe>
+					</div>
+					</div>{% endif %}
 					</article>
 				</div>
 			</li>

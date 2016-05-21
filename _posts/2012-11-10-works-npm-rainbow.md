@@ -9,10 +9,11 @@ figures:
   - src: "https://nodei.co/npm/rainbow.png?downloads=true"
     height: 69
 public: false
-video: {
-	src: "http://v.qq.com/iframe/player.html?vid=t01662frswa&amp;width=&amp;height=&amp;auto=0",
-	width: 100%,
-	height: 100%
+video: "http://v.qq.com/iframe/player.html?vid=t01662frswa&amp;auto=0"
+
+demo: {
+  src: "",
+  height: 0
 }
 ---
 
