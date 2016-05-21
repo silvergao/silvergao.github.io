@@ -9,7 +9,11 @@ figures:
   - src: "https://nodei.co/npm/rainbow.png?downloads=true"
     height: 69
 public: false
-video: http://v.qq.com/iframe/player.html?vid=t01662frswa&amp;width=&amp;height=537&amp;auto=0
+video: {
+	src: "http://v.qq.com/iframe/player.html?vid=t01662frswa&amp;width=&amp;height=537&amp;auto=0",
+	width: 100%,
+	height: 537
+}
 ---
 
 针对node.js下Express开发的一个中间件，可以直接使用文件路径映射来简化RESTful的路由配置。
