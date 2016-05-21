@@ -1,32 +1,47 @@
+markdown: kramdown
 safe: false
-permalink: /posts/:title.html
+permalink: /blog/posts/:title
 exclude:
   - README.md
 
-name: Silver's Blog
-host: www.cuicui.info
-desc: Some description of your site.
+host: yanjunyi.com
+
+blog:
+    name: 闭门造轮子
+    desc: 造轮子工程师的代码笔记
 
 custom:
     category:
-        default: Default Category
-        another: Another Category
+        thinking: 闭门思考
+        experience: 问题即经验
+        discovery: 日新月异
+        criticism: 非专业吐槽
+        communication: 交流分享
     categories:
-      - name:  default
-        title: Default Category
+      - name:  thinking
+        title: 闭门思考
 
-      - name:  another
-        title: Another Category
+      - name:  experience
+        title: 问题即经验
+
+      - name:  discovery
+        title: 日新月异
+
+      - name:  criticism
+        title: 非专业吐槽
+
+      - name: communication
+        title: 交流分享
 
     scrollingLoadCount: 2                          # 滚屏自动加载文章数量，“0”为关闭
 
 meta:
     author:
-        name: Silver
-        email: your-email@example.com
-        disqus: your-disqus-short-name              # Disqus缩略标识
+        name: mytharcher
+        email: mytharcher@gmail.com
+        disqus: tech-justlog-me                     # Disqus缩略标识
         gcse: 000346898720731947188:13h55x32l0y     # Google自定义搜索标识ID
-        github: your-github-account                 # GitHub账号
+        github: mytharcher                          # GitHub账号
         gravatar: 1cd8c12591616d8c22aaa624f8c07834  # Gravatar头像标识
 
     disqus: disqus.com/embed.js                     # Disqus评论的JS地址
