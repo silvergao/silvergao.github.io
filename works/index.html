@@ -403,26 +403,25 @@ aside .block a{margin:0;}
 #timeline li.item article p.video{
 	text-indent: 0em;
 }
-/*reset.css*/
-/*-------------------------*/
-.video-fluid{
+/*make video frame scale by screen */
+.myvideo-fluid{
 	position: relative;
 	border: 1px solid black;
 }
-.video-fluid embed,.video-fluid div{
+.myvideo-fluid embed,.myvideo-fluid div{
 	position: absolute;
 	width:100%;
 	height: 100%;
 	left:0;
 	top:0;
 }
-.widescreen{
+.mywidescreen{
 	padding-bottom: 56.25%;
 }
-.narrowscreen{
+.mynarrowscreen{
 	padding-bottom:75%;
 }
-.youku{
+.myyouku{
 	padding-top: 40px;
 }
 
@@ -616,7 +615,7 @@ aside .block a{margin:0;}
 					<article>
 					{{item.content}}
 					{% if item.video %}
-					<div class="video-fluid widescreen youku">
+					<div class="myvideo-fluid mywidescreen myyouku">
 					<div>
 						<iframe class="video_iframe" style="z-index:1;" src="{{item.video}}" allowfullscreen="" frameborder="0" width="100%" height="100%"></iframe>
 					</div>
