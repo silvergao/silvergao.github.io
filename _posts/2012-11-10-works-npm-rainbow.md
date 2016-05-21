@@ -12,7 +12,7 @@ public: false
 video: {
 	src: "http://v.qq.com/iframe/player.html?vid=t01662frswa&amp;width=&amp;height=537&amp;auto=0",
 	width: 100%,
-	height: 537
+	height: auto
 }
 ---
 
