@@ -6,7 +6,7 @@
 <meta charset="utf-8" />
 <meta name="author" content="{{ site.meta.author.name }}" />
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-<title>为自由而工作 - 严俊羿</title>
+<title>专注于艺术 - 高翠银</title>
 <link rel="icon" href="/favicon.png" type="image/x-icon" />
 <link rel="shortcut icon" href="/favicon.png" type="image/x-icon" />
 <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.css" />
@@ -14,7 +14,7 @@
 *{box-sizing:border-box; -moz-box-sizing:border-box; -webkit-box-sizing:border-box;}
 html,body,h1,h2,h3,h4,h5,h6,ul,ol,li,p,form,dl,dt,dd,figure{margin:0; padding:0; border:0;}
 html,body{height:100%;}
-body{line-height:1.6em; font-family:Helvetica, Arial, sans-serif; color:#555; background: url(http://mbed.qiniudn.com/yanjunyi.com/img/bg-light.jpg) fixed;}
+body{line-height:1.6em; font-family:Helvetica, Arial, sans-serif; color:#555; background: url(images/bg-light.jpg) fixed;}
 a{margin:0 2px; color:#06c; text-decoration:none;}
 a:hover{text-decoration:underline;}
 h1 a,h2 a,h3 a,h4 a,h5 a,h6 a{margin:0;}
@@ -23,11 +23,11 @@ input,textarea{resize:none;}
 
 @font-face {
   font-family: 'fa-addition';
-  src: url('http://mbed.qiniudn.com/font/fa-addition.eot');
-  src: url('http://mbed.qiniudn.com/font/fa-addition.eot#iefix') format('embedded-opentype'),
-       url('http://mbed.qiniudn.com/font/fa-addition.woff') format('woff'),
-       url('http://mbed.qiniudn.com/font/fa-addition.ttf') format('truetype'),
-       url('http://mbed.qiniudn.com/font/fa-addition.svg#fa-addition') format('svg');
+  src: url('/works/fa-addition.eot');
+  src: url('/works/fa-addition.eot#iefix') format('embedded-opentype'),
+       url('/works/fa-addition.woff') format('woff'),
+       url('/works/fa-addition.ttf') format('truetype'),
+       url('/works/fa-addition.svg#fa-addition') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -37,7 +37,7 @@ input,textarea{resize:none;}
 @media screen and (-webkit-min-device-pixel-ratio:0) {
   @font-face {
     font-family: 'fa-addition';
-    src: url('http://mbed.qiniudn.com/font/fa-addition.svg?81684682#fa-addition') format('svg');
+    src: url('/works/fa-addition.svg') format('svg');
   }
 }
 */
@@ -244,7 +244,7 @@ aside .block a{margin:0;}
 }
 /*#contact a{color: #555;}*/
 #contact .mail:after{
-	content: "mytharcher@gmail.com";
+	content: "306542089@qq.com";
 }
 
 #timeline{
@@ -515,27 +515,27 @@ aside .block a{margin:0;}
 	<h1><a href="/"><img src="{{site.meta.gravatar}}{{site.meta.author.gravatar}}?s=32" width="32" height="32" /></a><span data-translate="work-for-free">工作，是为了自由</span></h1>
 	
 	<div id="skills" class="block">
-		<h3 data-translate="programming-skills">编程技能</h3>
+		<h3 data-translate="programming-skills">获得技能</h3>
 		<ul>
 			<li>
 				<div style="width:90%"></div>
-				<p>JavaScript</p>
+				<p>Adobe After Effects</p>
 			</li>
 			<li>
 				<div style="width:85%"></div>
-				<p>HTML5</p>
+				<p>Adobe Premiere</p>
+			</li>
+			<li>
+				<div style="width:81%"></div>
+				<p>Adobe Photoshop</p>
+			</li>
+			<li>
+				<div style="width:90%"></div>
+				<p>广告/影视策划</p>
 			</li>
 			<li>
 				<div style="width:80%"></div>
-				<p>CSS3</p>
-			</li>
-			<li>
-				<div style="width:65%"></div>
-				<p>Node.js</p>
-			</li>
-			<li>
-				<div style="width:60%"></div>
-				<p>PHP</p>
+				<p>影视后期</p>
 			</li>
 		</ul>
 	</div>
@@ -557,7 +557,7 @@ aside .block a{margin:0;}
 	</div>
 	
 	<div id="contact" class="block">
-		<p><span data-translate="contact-me-description">个人长期承接各类 Web 开发，如果您能提供的时薪不低于$30，请联系我的邮箱：</span> <a href="mailto:" class="mail"></a></p>
+		<p><span data-translate="contact-me-description">请联系我</span> <a href="mailto:" class="mail"></a></p>
 	</div>
 </aside>
 
@@ -575,7 +575,7 @@ aside .block a{margin:0;}
 				<div class="content">
 					<header>
 						<div class="links">
-							{% if item.gitrepo %}<iframe src="http://ghbtns.com/github-btn.html?user=mytharcher&amp;repo={{item.gitrepo}}&amp;type=watch&amp;count=true" allowtransparency="true" frameborder="0" scrolling="0" width="82" height="20" class="link-item"></iframe>{% endif %}
+							{% if item.gitrepo %}<iframe src="" allowtransparency="true" frameborder="0" scrolling="0" width="82" height="20" class="link-item"></iframe>{% endif %}
 						</div>
 						<h3>{% if item.link %}<a href="{{item.link}}" target="_blank">{{item.title}}</a>{% else %}{{item.title}}{% endif %}</h3>
 						<p class="tags">
@@ -599,7 +599,7 @@ aside .block a{margin:0;}
 	</div>
 </div>
 
-<script type="text/javascript" src="http://elfjs.qiniudn.com/code/elf-0.5.0.min.js"></script>
+<script type="text/javascript" src="/works/elf-0.5.0.min.js"></script>
 <script type="text/javascript" src="/assets/js/site.js"></script>
 {% include baidu-stats.tpl %}
 

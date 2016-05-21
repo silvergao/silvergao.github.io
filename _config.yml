@@ -4,11 +4,11 @@ permalink: /blog/posts/:title
 exclude:
   - README.md
 
-host: yanjunyi.com
+host: cuicui.info
 
 blog:
-    name: 闭门造轮子
-    desc: 造轮子工程师的代码笔记
+    name: Silver Gao
+    desc: 专注于视频
 
 custom:
     category:
@@ -37,11 +37,11 @@ custom:
 
 meta:
     author:
-        name: mytharcher
-        email: mytharcher@gmail.com
+        name: silver
+        email: 306542089@qq.com
         disqus: tech-justlog-me                     # Disqus缩略标识
         gcse: 000346898720731947188:13h55x32l0y     # Google自定义搜索标识ID
-        github: mytharcher                          # GitHub账号
+        github: none                          # GitHub账号
         gravatar: 1cd8c12591616d8c22aaa624f8c07834  # Gravatar头像标识
 
     disqus: disqus.com/embed.js                     # Disqus评论的JS地址
