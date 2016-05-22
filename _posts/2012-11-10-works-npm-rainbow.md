@@ -3,7 +3,6 @@ layout: post
 title: "npm: Rainbow"
 category: works
 icon: code-fork
-link: "https://www.npmjs.org/package/rainbow"
 gitrepo: rainbow
 tags: [npm, node.js, express]
 figures:
