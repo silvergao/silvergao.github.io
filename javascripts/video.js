@@ -1,13 +1,14 @@
 var tagname = "tcvideo"
-var data1 = '<div class="myvideo-fluid mywidescreen myyouku"><div><iframe class="video_iframe" style="z-index:1;" src=\''
-var data2 = '&amp;auto=0\' allowfullscreen="" frameborder="0" width="100%" height="100%"></iframe></div></div>'
+var data1 = '<div class="myvideo-fluid mywidescreen myyouku"><div><iframe class="video_iframe" style="z-index:1;" src="'
+var data2 = '" allowfullscreen="" frameborder="0" width="100%" height="100%"></iframe></div></div>'
 $(document).ready(function() {
     var objs = $(tagname);
 	if (objs.size() <= 0)
 		return;
 	for (var i in objs) {
 		var tc = objs.get(i);
-		$(tc).append(data1 + $(tc).attr("src") + data2);
+		var src = $(tc).attr("src") + "&auto=0"
+		$(tc).append(data1 + src + data2);
 	}
 	
     var initVideoSrc = function(obj, jp) {
