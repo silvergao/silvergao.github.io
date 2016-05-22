@@ -7,7 +7,9 @@ $(document).ready(function() {
 		console.log(i);
 		console.log(val);
 		var src = $(val).attr("src") + "&auto=0"
-		$(val).replaceWith(data1 + src + data2);   
+		console.log(src);
+		$(val).replaceWith(data1 + src + data2);
+		console.log($(val));
 	});
 	
     var initVideoSrc = function(obj, jp) {
