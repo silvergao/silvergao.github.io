@@ -9,13 +9,14 @@ pageClass: page-type-post
 <article>
 	<h1><a href="{{ page.url }}">{{ page.title }}</a></h1>
 	{% assign post = page %}
-	{% include youyan.tpl %}
 	{{ content }}
 	{% capture permaurl %}http://{{site.host}}{{ page.url }}{% endcapture %}
 	<!--<p class="permalink">永久链接：<a href="{{ permaurl }}">{{ permaurl }}</a></p>-->
 </article>
-{% include youyan.tpl %}
+
 <div id="disqus_thread" class="comments"></div>
+{% include youyan.tpl %}
+{% include baidu-stats.tpl %}
 
 <ins class="adsbygoogle"
      style="display:block"
