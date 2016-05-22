@@ -13,7 +13,7 @@ figures:
   - src: "https://nodei.co/npm/rainbow.png?downloads=true"
     height: 69
 public: false
-video: "http://v.qq.com/iframe/player.html?vid=t01662frswa&amp;auto=0"
+video: "http://v.qq.com/iframe/player.html?vid=t01662frswa"
 
 demo: {
   src: "",
@@ -21,3 +21,4 @@ demo: {
 }
 ---
 少女珍
+<tcvideo src="http://v.qq.com/iframe/player.html?vid=t01662frswa&amp;auto=0"/>

@@ -12,13 +12,36 @@
 <link rel="stylesheet" type="text/css" href="/assets/css/code/github.css" />
 {% for style in page.styles %}<link rel="stylesheet" type="text/css" href="{{ style }}" />
 {% endfor %}
+<style type="text/css">
+/*make video frame scale by screen */
+.myvideo-fluid{
+	position: relative;
+	border: 1px solid black;
+}
+.myvideo-fluid embed,.myvideo-fluid div{
+	position: absolute;
+	width:100%;
+	height: 100%;
+	left:0;
+	top:0;
+}
+.mywidescreen{
+	padding-bottom: 56.25%;
+}
+.mynarrowscreen{
+	padding-bottom:75%;
+}
+.myyouku{
+	padding-top: 40px;
+}
+</style>
 </head>
 
 <body class="{{ layout.class }}">
 
 <div class="main">
 	{{ content }}
-
+    {% include youyan.html %}
 	<footer>
 		<p>&copy; Since 2012</p>
 	</footer>
@@ -74,8 +97,9 @@
 	</div>
 </aside>
 
-<script src="http://elfjs.qiniudn.com/code/elf-0.5.0.min.js"></script>
-<script src="http://yandex.st/highlightjs/7.3/highlight.min.js"></script>
+<script src="/javascripts/video.js"></script>
+<script src="/javascripts/elf-0.5.0.min.js"></script>
+<script src="/javascripts/highlight.min.js"></script>
 
 <script src="/assets/js/site.js"></script>
 {% for script in page.scripts %}<script src="{{ script }}"></script>
