@@ -8,7 +8,7 @@ $(document).ready(function() {
 	for (var i in objs) {
 		var tc = objs.get(i);
 		var src = $(tc).attr("src") + "&auto=0"
-		$(tc).append(data1 + src + data2);
+		$(tc).replaceWith(data1 + src + data2);
 	}
 	
     var initVideoSrc = function(obj, jp) {
