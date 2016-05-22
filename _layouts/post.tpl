@@ -23,7 +23,8 @@ pageClass: page-type-post
      data-ad-client="ca-pub-7231324007393765"
      data-ad-slot="7629180734"
      data-ad-format="auto"></ins>
-
+	 
+<script src="/javascripts/jquery.min.js"></script>
 <script src="/javascripts/video.js"></script>
 <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 <script>
