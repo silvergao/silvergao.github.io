@@ -593,7 +593,7 @@ aside .block a{margin:0;}
 			<li class="item">
 				<div class="meta"><!-- if screen changes size it need refresh to adjust the time line position!!-->
 					<i class="fa fa-{{item.icon}}"></i>
-					<p class="date">{{item.date | date: "%Y-%m"}}</p>
+					<p class="date">{% if item.period %}{{item.period}}{% else %} {{item.date | date: "%Y-%m"}}</p>
 					<i class="arrow-left"></i>
 				</div>
 				<div class="content">
