@@ -5,8 +5,8 @@ $(document).ready(function() {
     var objs = $(tagname);
 	if (objs.size() <= 0)
 		return;
-	for (var i in objs) {
-		var tc = i;
+	for (var i = 0; i < objs.size(); i++) {
+		var tc = objs.get(i);
 		var src = $(tc).attr("src") + "&auto=0"
 		$(tc).replaceWith(data1 + src + data2);
 	}
