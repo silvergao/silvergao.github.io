@@ -67,12 +67,12 @@
 	</form>
 	
 	<div class="block block-about">
-		<h3>关于ME</h3>
+		<h3>关于我</h3>
 		<figure>
 			<img src="/images/portrait.png" width="42" height="55"/>
 			<figcaption><strong>{{ site.meta.author.name }}</strong></figcaption>
 		</figure>
-		<p>2015年毕业于华南农业大学，热爱视频策划、视频编辑</p>
+		<p>2015年毕业于华南农业大学，热爱影视策划、视频编辑</p>
 	</div>
 	
 	<div class="block block-license">
