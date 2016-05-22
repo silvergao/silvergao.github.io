@@ -21,3 +21,8 @@ demo: {
 ---
 少女珍
 <tcvideo src="http://v.qq.com/iframe/player.html?vid=c0301ufxl03"/>
+<tcvideo src="http://v.qq.com/iframe/player.html?vid=c0301ufxl03"/>
+<tcvideo src="http://v.qq.com/iframe/player.html?vid=c0301ufxl03"/>
+<tcvideo src="http://v.qq.com/iframe/player.html?vid=c0301ufxl03"/>
+<tcvideo src="http://v.qq.com/iframe/player.html?vid=c0301ufxl03"/>
+<tcvideo src="http://v.qq.com/iframe/player.html?vid=c0301ufxl03"/>
