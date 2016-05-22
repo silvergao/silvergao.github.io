@@ -5,6 +5,8 @@
 <meta name="author" content="{{ site.meta.author.name }}" />
 <meta name="keywords" content="{{ page.tags | join: ',' }}" />
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta name="ujianVerification" content="dca37b388c57273ed3f279334ef41c72" /> <!--有言-->
+
 <title>{{ site.blog.name }}{% if page.title %} / {{ page.title }}{% endif %}</title>
 <link rel="icon" href="/favicon.png" type="image/x-icon" />
 <link rel="shortcut icon" href="/favicon.png" type="image/x-icon" />
@@ -14,6 +16,30 @@
 <link rel="stylesheet" type="text/css" href="/assets/css/code/sunburst.css" />
 {% for style in page.styles %}<link rel="stylesheet" type="text/css" href="{{ style }}" />
 {% endfor %}
+
+<style type="text/css">
+/*make video frame scale by screen */
+.myvideo-fluid{
+	position: relative;
+	border: 1px solid black;
+}
+.myvideo-fluid embed,.myvideo-fluid div{
+	position: absolute;
+	width:100%;
+	height: 100%;
+	left:0;
+	top:0;
+}
+.mywidescreen{
+	padding-bottom: 56.25%;
+}
+.mynarrowscreen{
+	padding-bottom:75%;
+}
+.myyouku{
+	padding-top: 40px;
+}
+</style>
 </head>
 
 <body class="{{ layout.pageClass }}">
