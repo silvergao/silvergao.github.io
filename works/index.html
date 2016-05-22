@@ -601,7 +601,7 @@ aside .block a{margin:0;}
 						<div class="links">
 							{% if item.gitrepo %}<iframe src="" allowtransparency="true" frameborder="0" scrolling="0" width="82" height="20" class="link-item"></iframe>{% endif %}
 						</div>
-						<h3>{% if item.link %}<a href="{{item.link}}" target="_blank">{{item.title}}</a>{% else %}<a href='{{item.url}}&amp;auto=0' target="_blank">{{item.title}}</a>{% endif %}</h3>
+						<h3>{% if item.link %}<a href="{{item.link}}" target="_blank">{{item.title}}</a>{% else %}<a href='{{item.url}}' target="_blank">{{item.title}}</a>{% endif %}</h3>
 						<p class="tags">
 						{% for tag in item.tags %}<span class="tag">{{tag}}</span>{% endfor %}
 						</p>
@@ -617,7 +617,7 @@ aside .block a{margin:0;}
 					{% if item.video %}
 					<div class="myvideo-fluid mywidescreen myyouku">
 					<div>
-						<iframe class="video_iframe" style="z-index:1;" src="{{item.video}}" allowfullscreen="" frameborder="0" width="100%" height="100%"></iframe>
+						<iframe class="video_iframe" style="z-index:1;" src="{{item.video}}&amp;auto=0" allowfullscreen="" frameborder="0" width="100%" height="100%"></iframe>
 					</div>
 					</div>{% endif %}
 					</article>
