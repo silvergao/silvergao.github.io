@@ -98,7 +98,6 @@
 	</div>
 </aside>
 
-<script src="/javascripts/video.js"></script>
 <script src="/javascripts/elf-0.5.0.min.js"></script>
 <script src="/javascripts/highlight.min.js"></script>
 

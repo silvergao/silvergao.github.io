@@ -24,6 +24,7 @@ pageClass: page-type-post
      data-ad-slot="7629180734"
      data-ad-format="auto"></ins>
 
+<script src="/javascripts/video.js"></script>
 <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 <script>
 (adsbygoogle = window.adsbygoogle || []).push({});
