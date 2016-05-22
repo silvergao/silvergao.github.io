@@ -14,10 +14,7 @@ pageClass: page-type-post
 	<!--<p class="permalink">永久链接：<a href="{{ permaurl }}">{{ permaurl }}</a></p>-->
 </article>
 
-<div id="disqus_thread" class="comments"></div>
-
 <!--include was failed，so embed it here-->
-{% include youyan.tpl %}
 <!-- UJian Button BEGIN -->
 <div class="ujian-hook"></div>
 <script type="text/javascript">var ujian_config = {num:8,picSize:32,textHeight:45};</script>
