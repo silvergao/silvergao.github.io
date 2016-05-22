@@ -9,22 +9,15 @@ host: cuicui.info
 blog:
     name: Silver Gao
     desc: 专注于视频
-
-comments:
-   provider:    uyan
    
 custom:
     category:
-        works: 作品
         thinking: 闭门思考
         experience: 问题即经验
         discovery: 日新月异
         criticism: 非专业吐槽
         communication: 交流分享
     categories:
-      - name:  works
-        title: 作品
-
       - name:  thinking
         title: 闭门思考
 
