@@ -6,8 +6,8 @@ $(document).ready(function() {
 	$(tagname).each(function(i,val){
 		console.log(i);
 		console.log(val);
-		var src = $(val).attr("src") + "&auto=0"
-		$(val).replaceWith(data1 + src + data2);   
+		var src = val.attr("src") + "&auto=0"
+		val.replaceWith(data1 + src + data2);   
 	});
 	
     var initVideoSrc = function(obj, jp) {
