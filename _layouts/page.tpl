@@ -44,7 +44,7 @@
 <div class="main">
 	{{ content }}
 	<div class="block">
-    {% include youyan.tpl %}
+	{% include list.tpl %}
     </div>
 	<footer>
 		<p>&copy; Since 2012</p>
