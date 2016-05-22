@@ -1,4 +1,5 @@
 ---
+layout: post
 title: "npm: Rainbow"
 category: works
 icon: code-fork
