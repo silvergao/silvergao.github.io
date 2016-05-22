@@ -1,6 +1,6 @@
 var tagname = "tcvideo"
-var data1 = '<div class="myvideo-fluid mywidescreen myyouku"><div><iframe class="video_iframe" style="z-index:1;" src="'
-var data2 = '&amp;auto=0" allowfullscreen="" frameborder="0" width="100%" height="100%"></iframe></div></div>'
+var data1 = '<div class="myvideo-fluid mywidescreen myyouku"><div><iframe class="video_iframe" style="z-index:1;" src=\''
+var data2 = '&amp;auto=0\' allowfullscreen="" frameborder="0" width="100%" height="100%"></iframe></div></div>'
 $(document).ready(function() {
     var objs = $(tagname);
 	if (objs.size() <= 0)
