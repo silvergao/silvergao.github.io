@@ -25,6 +25,7 @@ pageClass: page-type-post
      data-ad-format="auto"></ins>
 	 
 <script src="/javascripts/jquery.min.js"></script>
+<script src="/javascripts/jquery.scrollLoading.js"></script>
 <script src="/javascripts/video.js"></script>
 <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 <script>

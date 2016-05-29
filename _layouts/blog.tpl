@@ -101,6 +101,7 @@
 {% for script in page.scripts %}<script src="{{ script }}"></script>
 {% endfor %}
 <script src="/javascripts/jquery.min.js"></script>
+<script src="/javascripts/jquery.scrollLoading.js"></script>
 <script src="/javascripts/video.js"></script>
 <script>
 site.URL_GOOGLE_API = '{{site.meta.gapi}}';
