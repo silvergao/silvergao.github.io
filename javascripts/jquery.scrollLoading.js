@@ -47,7 +47,7 @@
 				if (o) {
 					post = o.offset().top - contop, post + o.height();
 	
-					if (o.is(':visible') && (post >= 0 && post < contHeight) || (posb > 0 && posb <= contHeight)) {
+					if ((post >= 0 && post < contHeight) || (posb > 0 && posb <= contHeight)) {
 						if (url) {
 							//在浏览器窗口内
 							if (tag === "img") {
