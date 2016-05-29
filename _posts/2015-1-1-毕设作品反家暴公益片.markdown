@@ -1,0 +1,16 @@
+---
+layout: post
+title:  "毕设作品反家暴公益片"
+date:   2015-1-1 14:26:07
+period: "大学期间"
+category: works
+icon: code-fork
+gitrepo: 
+tags: [大学, 毕设, 家暴, 公益]
+video: "http://v.qq.com/iframe/player.html?vid=q0301psoh6s"
+desc: 【描述描述描述描述】
+public: false
+---
+【描述】
+<tcvideo src="{{page.video}}"></tcvideo>
+

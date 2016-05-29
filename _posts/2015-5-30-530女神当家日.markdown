@@ -1,0 +1,15 @@
+---
+layout: post
+title:  "530女神当家日"
+date:   2015-5-30 14:26:07
+period: "网易"
+category: works
+icon: code-fork
+gitrepo: 
+tags: [网易, 节日视频]
+video: "http://v.qq.com/iframe/player.html?vid=t0301cka894"
+desc: 【描述描述描述描述】
+public: false
+---
+【描述】
+<tcvideo src="{{page.video}}"></tcvideo>
