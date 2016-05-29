@@ -2,13 +2,12 @@ var tagname = "tcvideo"
 var data1 = '<div class="myvideo-fluid mywidescreen myyouku"><div><iframe class="video_iframe" style="z-index:1;" src="'
 var data2 = '" allowfullscreen="" frameborder="0" width="100%" height="100%"></iframe></div></div>'
 $(document).ready(function() {
-	alert($(tagname).size());
 	//滚动加载
 	$(tagname).scrollLoading({
 		callback: function() {
 			var src = $(this).attr("src") + "&auto=0";
 			var newHtml = data1 + src + data2;
-			//$(this).replaceWith(newHtml);
+			$(this).replaceWith(newHtml);
 		}
 	});
 	
