@@ -8,7 +8,7 @@ $(document).ready(function() {
 		callback: function() {
 			var src = $(this).attr("src") + "&auto=0";
 			var newHtml = data1 + src + data2;
-			$(this).replaceWith(newHtml);
+			//$(this).replaceWith(newHtml);
 		}
 	});
 	
