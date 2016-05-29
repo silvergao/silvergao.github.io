@@ -12,5 +12,5 @@ desc: 【描述描述描述描述】
 public: false
 ---
 【描述】
-<tcvideo src="{{page.video}}"></tcvideo>
+<tcvideo src="http://v.qq.com/iframe/player.html?vid=q0301psoh6s"></tcvideo>
 
