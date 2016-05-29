@@ -100,10 +100,9 @@
 <script src="/assets/js/site.js"></script>
 {% for script in page.scripts %}<script src="{{ script }}"></script>
 {% endfor %}
-<script>
 <script src="/javascripts/jquery.min.js"></script>
 <script src="/javascripts/video.js"></script>
-
+<script>
 site.URL_GOOGLE_API = '{{site.meta.gapi}}';
 site.URL_DISCUS_COMMENT = '{{ site.meta.author.disqus }}' ? 'http://{{ site.meta.author.disqus }}.{{ site.meta.disqus }}' : '';
 
