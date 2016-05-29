@@ -8,6 +8,7 @@ $(document).ready(function() {
 			var src = $(this).attr("src") + "&auto=0";
 			var newHtml = data1 + src + data2;
 			$(this).replaceWith(newHtml);
+			console.log("success");
 		}
 	});
 	
