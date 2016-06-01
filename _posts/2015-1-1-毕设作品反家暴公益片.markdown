@@ -3,7 +3,7 @@ layout: post
 title:  "毕设作品反家暴公益片"
 date:   2015-1-1 14:26:07
 period: "大学期间"
-category: works
+category: college
 icon: code-fork
 gitrepo: 
 tags: [大学, 毕设, 家暴, 公益]

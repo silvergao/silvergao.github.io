@@ -18,10 +18,7 @@ custom:
         yy: 	 YY
         sohu: 	 搜狐
         other: 	 其它
-    categories:
-      - name:  works
-        title: 作品
-      
+    categories:      
       - name:  college
         title: 大学
 
