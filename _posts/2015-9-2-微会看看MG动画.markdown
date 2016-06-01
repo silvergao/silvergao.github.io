@@ -3,7 +3,7 @@ layout: post
 title:  "微会产品宣传MG动画"
 date:   2015-9-2 14:26:07
 period: "微会"
-category: works
+category: yy
 icon: code-fork
 gitrepo: 
 tags: [微会, 产品宣传, 动画]

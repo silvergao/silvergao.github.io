@@ -3,7 +3,7 @@ layout: post
 title:  "王老吉参赛视频《黑帮篇》"
 date:   2013-8-16 14:26:07
 period: "大学期间"
-category: works
+category: college
 icon: code-fork
 gitrepo: 
 tags: [大学, 参赛, 广告]
