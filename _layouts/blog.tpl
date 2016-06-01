@@ -22,6 +22,7 @@
 .myvideo-fluid{
 	position: relative;
 	border: 1px solid black;
+	background:#000;
 }
 .myvideo-fluid embed,.myvideo-fluid div{
 	position: absolute;
