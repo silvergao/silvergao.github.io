@@ -17,6 +17,7 @@
 		<!--fonts-->
 		<link href='http://fonts.useso.com/css?family=Coda:400,800' rel='stylesheet' type='text/css'>
 		<link href='http://fonts.useso.com/css?family=Jockey+One' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" type="text/css" href="3dgallery/style.css" />
 
 		<!--script-->
 		<script src="js/modernizr.custom.js"></script>
@@ -117,55 +118,90 @@
 					</section>
 					</div>
 			</div>
-			<section class="slider">
+			<div class="our-work" id="our-work">
 				<div class="container">
-				<div class="flexslider">
-					<ul class="slides">
-						<li>
-							<div class="banner-info">
-							<img class="img-responsive" src="images/IMG_2.jpg">
+					<h2>our work</h2>
+					<p>lorem ipsum simply a dummy text to format fonts and paragraphs</p>
+						<div class="gallery-bottom">
+							<div class="col-md-4 bottom-gallery">
+								<a href="./images/IMG_3.jpg" rel="title" class="b-link-stripe b-animate-go  thickbox">
+								<img class="img-responsive" src="images/IMG_3.jpg" />
+								<div class="b-wrapper">
+									<h3 class="b-animate b-from-left    b-delay03 ">
+										<span class="txt">Lorem</span>
+										<span class="glyphicon glyphicon-arrow-right gal-icn" aria-hidden="true"></span>
+									</h3>
+								</div>
+								</a>
 							</div>
-						</li>
-						<li>
-							<div class="banner-info">
-							<img class="img-responsive" src="images/IMG_2.jpg">
+							<div class="col-md-4 bottom-gallery">
+								<a href="images/IMG_1.jpg" rel="title" class="b-link-stripe b-animate-go  thickbox">
+								<img class="img-responsive" src="images/IMG_1.jpg" />
+								<div class="b-wrapper">
+									<h3 class="b-animate b-from-left    b-delay03 ">
+										<span class="txt">Lorem</span>
+										<span class="glyphicon glyphicon-arrow-right gal-icn" aria-hidden="true"></span>
+									</h3>
+								</div>
+								</a>
 							</div>
-						</li>
-						<li>
-							<div class="banner-info">
-							<img class="img-responsive" src="images/IMG_2.jpg">
+							<div class="col-md-4 bottom-gallery">
+								<a href="images/IMG_5.jpg" rel="title" class="b-link-stripe b-animate-go  thickbox">
+								<img class="img-responsive" src="images/IMG_5.jpg" />
+								<div class="b-wrapper">
+									<h3 class="b-animate b-from-left    b-delay03 ">
+										<span class="txt">Lorem</span>
+										<span class="glyphicon glyphicon-arrow-right gal-icn" aria-hidden="true"></span>
+									</h3>
+								</div>
+								</a>
 							</div>
-						</li>
-						<li>
-							<div class="banner-info">
-							<img class="img-responsive" src="images/IMG_2.jpg">
+							<div class="col-md-4 bottom-gallery">
+								<a href="images/IMG_2.jpg" rel="title" class="b-link-stripe b-animate-go  thickbox">
+								<img class="img-responsive" src="images/IMG_2.jpg" />
+								<div class="b-wrapper">
+									<h3 class="b-animate b-from-left    b-delay03 ">
+										<span class="txt">Lorem</span>
+										<span class="glyphicon glyphicon-arrow-right gal-icn" aria-hidden="true"></span>
+									</h3>
+								</div>
+								</a>
 							</div>
-						</li>
-						<li>
-							<div class="banner-info">
-							<img class="img-responsive" src="images/IMG_2.jpg">
+							<div class="col-md-4 bottom-gallery">
+								<a href="images/IMG_4.jpg" rel="title" class="b-link-stripe b-animate-go  thickbox">
+								<img class="img-responsive" src="images/IMG_4.jpg" />
+								<div class="b-wrapper">
+									<h3 class="b-animate b-from-left    b-delay03 ">
+										<span class="txt">Lorem</span>
+										<span class="glyphicon glyphicon-arrow-right gal-icn" aria-hidden="true"></span>
+									</h3>
+								</div>
+								</a>
 							</div>
-						</li>
-					</ul>
+							<div class="col-md-4 bottom-gallery">
+								<a href="images/IMG_6.jpg" rel="title" class="b-link-stripe b-animate-go  thickbox">
+								<img class="img-responsive" src="images/IMG_6.jpg" />
+								<div class="b-wrapper">
+									<h3 class="b-animate b-from-left    b-delay03 ">
+										<span class="txt">Lorem</span>
+										<span class="glyphicon glyphicon-arrow-right gal-icn" aria-hidden="true"></span>
+									</h3>
+								</div>
+								</a>
+							</div>
+							<div class="clearfix"></div>
+							<script src="js/jquery.chocolat.js"></script>
+							<link rel="stylesheet" href="css/chocolat.css" type="text/css" media="screen" charset="utf-8">
+							<!--light-box-files -->
+							<script type="text/javascript" charset="utf-8">
+							$(function() {
+							$('.bottom-gallery a').Chocolat();
+							});
+							</script>
+						</div>
 				</div>
-				</div>
-				<!-- FlexSlider -->
-					 
-					  <script type="text/javascript">
-						$(function(){
-						  // SyntaxHighlighter.all();
-						});
-						$(window).load(function(){
-						  $('.flexslider').flexslider({
-							animation: "slide",
-							start: function(slider){
-							  $('body').removeClass('loading');
-							}
-						  });
-						});
-					  </script>
-				<!-- FlexSlider -->
-			</section>
+			</div>
+
             <section class="v">
 				<div class="container">
 				
@@ -173,112 +209,38 @@
 			</section>
 			<div class="social-feeds">
 			<div class="container">
-				<div id="banner-example-1" class="light" style="margin-top:50px;">
-				<ul>
-					<!-- THE 1. SLIDE -->
-					<li data-transition="fade"><img src="images/11.jpg" data-thumb="images/twitter.jpg" data-thumb_bw="images/thumb1_bw.jpg" alt="" />
-						<div  class="creative_layer">
-							<div class="caption_blue fadeup" style="top:170px;left:50px;">Welcome to PARADIGM</div>
-							<div class="caption_black smallcap faderight" style="top:213px;left:90px">The highly customizable slider solution</div>
-						</div>
-					</li>
-					
-					<!-- THE 2. SLIDE -->
-					<li data-transition="slide"><img src="images/12.jpg" data-thumb="images/twitter.jpg" data-thumb_bw="images/thumb_vimeo_bw.jpg" alt="" />
-						<div class="video_pradigm">
-							<div class="video_paradigm_wrap">
-								<iframe class="video_clip" src="http://player.vimeo.com/video/24456787?title=0&amp;byline=0&amp;portrait=0" width="534" height="300" frameborder="0" webkitAllowFullScreen allowFullScreen></iframe>
-								<h2>Vimeo Video Support</h2>
-								<p> Themepunch creates beautiful and elegant termplates, themes and components that suit your clients needs. </p>
-								<p> <strong>Lorem ipsum</strong> dolor sit amet, consetetur sadipscing elitr, sed diam nonumy <strong>eirmod tempor</strong>. </p>
-								<a class="buttonlight" href="#">Visit Website</a>
-								<div id="close"></div>
+						<section id="dg-container" class="dg-container">
+							<div class="dg-wrapper">
+								<a href="#"><iframe class="video_iframe" style="z-index:1;" src="http://v.qq.com/iframe/player.html?vid=x03000hgdjr&amp;auto=0" allowfullscreen="" frameborder="0" width="482" height="316"></iframe><div>http://www.colazionedamichy.it/</div></a>
+								<a href="#"><iframe class="video_iframe" style="z-index:1;" src="http://v.qq.com/iframe/player.html?vid=x03000hgdjr&amp;auto=0" allowfullscreen="" frameborder="0" width="482" height="316"></iframe><div>http://www.percivalclo.com/</div></a>
+								<a href="#"><iframe class="video_iframe" style="z-index:1;" src="http://v.qq.com/iframe/player.html?vid=x03000hgdjr&amp;auto=0" allowfullscreen="" frameborder="0" width="482" height="316"></iframe><div>http://www.wanda.net/fr</div></a>
+			<!-- 					<a href="#"><img src="images/4.jpg" alt="image04"><div>http://lifeingreenville.com/</div></a>
+								<a href="#"><img src="images/5.jpg" alt="image05"><div>http://circlemeetups.com/</div></a>
+								<a href="#"><img src="images/6.jpg" alt="image06"><div>http://www.castirondesign.com/</div></a>
+								<a href="#"><img src="images/7.jpg" alt="image07"><div>http://www.foundrycollective.com/</div></a>
+								<a href="#"><img src="images/8.jpg" alt="image08"><div>http://www.mathiassterner.com/home</div></a>
+								<a href="#"><img src="images/9.jpg" alt="image09"><div>http://learnlakenona.com/</div></a>
+								<a href="#"><img src="images/10.jpg" alt="image10"><div>http://www.neighborhood-studio.com/</div></a> -->
+			<!-- 					<a href="#"><img src="images/11.jpg" alt="image11"><div>http://www.beckindesign.com/</div></a>
+								<a href="#"><img src="images/12.jpg" alt="image12"><div>http://kicksend.com/</div></a> -->
 							</div>
-						</div>
-						<div  class="creative_layer">
-							<div class="caption_blue fadeleft" style="top:120px;left:590px;">Vimeo Video</div>
-							<div class="caption_white faderight" style="top:120px;left:722px;">Support</div>
-							<div class="caption_black smallcap fadeup" style="top:163px;left:590px;">Click the play button</div>
-						</div>
-					</li>
-					
-					<!-- THE 3. SLIDE -->
-					<li data-transition="slide"><img src="images/13.jpg" data-thumb="images/twitter.jpg" data-thumb_bw="images/thumb2_bw.jpg" alt="" />
-						<div  class="creative_layer">
-							<div class="caption_green fadedown" style="top:80px;left:550px;">Some of Paradigm's Options:</div>
-							<div class="caption_black smallcap fadeleft" style="top:123px;left:550px">Image and thumbs fully resizable</div>
-							<div class="caption_black smallcap fadeleft" style="top:157px;left:550px">Optional parallax effect</div>
-							<div class="caption_black smallcap fadeleft" style="top:191px;left:550px">iPhone & Android touch enabled</div>
-						</div>
-					</li>
-					<!-- THE 4. SLIDE -->
-					<li data-transition="fade"><img src="images/14.jpg" data-thumb="images/twitter.jpg" data-thumb_bw="images/thumb3_bw.jpg" alt="" />
-						<div  class="creative_layer">
-							<div class="caption_orange fadeup" style="top:210px;left:200px;">Captions can be positioned freely</div>
-							<div class="caption_white fadedown" style="top:210px;left:513px;"><a href="#">Example URL-link</a></div>
-						</div>
-					</li>
-					
-					<!-- THE 5. SLIDE -->
-					<li data-transition="fade"><img src="images/15.jpg" data-thumb="images/twitter.jpg" data-thumb_bw="images/thumb_youtube_bw.jpg" alt="" />
-						<div class="video_pradigm">
-							<div class="video_paradigm_wrap">
-								<iframe class="video_clip" src="http://www.youtube.com/embed/kjX-8kQmakk?hd=1&amp;wmode=opaque&amp;autohide=1&amp;showinfo=0" height="300" width="534" frameborder="0" webkitAllowFullScreen allowFullScreen></iframe>
-								<h2>Youtube Video Support</h2>
-								<p> Themepunch creates beautiful and elegant termplates, themes and components that suit your clients needs. </p>
-								<p> <strong>Lorem ipsum</strong> dolor sit amet, consetetur sadipscing elitr, sed diam nonumy <strong>eirmod tempor</strong>. </p>
-								<a class="buttonlight" href="#">More Info</a>
-								<div id="close"></div>
-							</div>
-						</div>
-						<div  class="creative_layer">
-							<div class="caption_red fadeleft" style="top:120px;left:580px;"><a href="#">Youtube Video</a></div>
-							<div class="caption_white faderight" style="top:120px;left:728px;">Support</div>
-						</div>
-					</li>
-					
-				</ul>
-				</div>
-				<!-- script -->
-				<script src="js/jquery.wmuSlider.js"></script> 
-				<script>
-				$('.example1').wmuSlider();         
-				</script>
-				<script type="text/javascript">				
-				$(function() {
-					$.noConflict();					 									
-					
-					jQuery('#banner-example-1').paradigm(
-						{										
-							width:900,
-							height:300,
-							
-							thumbWidth:90,
-							thumbHeight:50,
-							thumbAmount:6,							
-							thumbSpaces:4,
-							thumbPadding:4,
-							thumbStyle:"thumb",
-							thumbVideoIcon:"on",
-							bulletXOffset:0,
-							bulletYOffset:0,
-							
-							shadow:'true',
-							
-							parallaxX:500,
-							parallaxY:10,
-							captionParallaxX:-40,
-							captionParallaxY:2,
-							
-							touchenabled:'on',
-							
-							timer:5						
+							<nav>	
+								<span class="dg-prev">&lt;</span>
+								<span class="dg-next">&gt;</span>
+							</nav>
+						</section>
+			        </div>
+					<script type="text/javascript" src="3dgallery/jquery.gallery.js"></script>
+					<script type="text/javascript" src="3dgallery/modernizr.custom.53451.js"></script>
+					<script type="text/javascript">
+						$(function() {
+							$('#dg-container').gallery(
+								{
+									autoplay	:	true
+								}
+								);
 						});
-						
-				});
-				</script>
-
-				<!-- script -->
+					</script>
 			</div>
 			</div>
 			<div class="footer">

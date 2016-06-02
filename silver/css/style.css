@@ -163,10 +163,12 @@ span.glyphicon.glyphicon-search.edit {
 }
 .bgi{
 	background:url(../images/1.jpg);
-	background-size:cover;
 	min-height:700px;
 	padding-top: 17em !important;
 	text-align:center;
+	background-size: 100% 100%;
+    -moz-background-size: 100% 100%;
+    -webkit-background-size: 100% 100%;
 }
 /*--our-features--*/
 .bgi h3 {
@@ -290,7 +292,12 @@ section::after {
 	padding-top: 1em;
 	background: url(../images/2.jpg);
 	text-align: center;
+	min-height:700px;
+	background-size: 100% 100%;
+    -moz-background-size: 100% 100%;
+    -webkit-background-size: 100% 100%;
 }
+
 
 .ss-style-doublediagonal::before,
 .ss-style-doublediagonal::after {
@@ -338,7 +345,12 @@ section::after {
 }
 /*--our-work--*/
 #our-work{
-		padding: 3em 0em;
+		padding: 0em 0em;
+		background: url(../images/3.jpg);
+		min-height: 700px;
+		background-size: 100% 100%;
+        -moz-background-size: 100% 100%;
+        -webkit-background-size: 100% 100%;
 	}
 .our-work{
 	text-align:center;
@@ -482,8 +494,12 @@ section.slider {
 	background: url(../images/3.jpg);
 	padding: 0em 0em !important;
 	text-align: center;
-	min-height: 750px;
+	min-height: 700px;
 	width: 100%;
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+    -moz-background-size: 100% 100%;
+    -webkit-background-size: 100% 100%;
 }
 section.slider .container {
 	padding-right: 0px;
@@ -500,8 +516,11 @@ section.v {
 	background: url(../images/4.jpg);
 	padding: 0em 0em !important;
 	text-align: center;
-	min-height: 750px;
+	min-height: 700px;
 	width: 100%;
+	background-size: 100% 100%;
+    -moz-background-size: 100% 100%;
+    -webkit-background-size: 100% 100%;
 }
 .banner-info h3 {
 	font-family: 'Jockey One', sans-serif;
