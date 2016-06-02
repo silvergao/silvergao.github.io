@@ -170,7 +170,42 @@ span.glyphicon.glyphicon-search.edit {
     -moz-background-size: 100% 100%;
     -webkit-background-size: 100% 100%;
 }
+section .left{
+	padding-right: 40%;
+	margin-left: 15%;
+	text-align: left;
+}
+section .left h3{
+}
+
 /*--our-features--*/
+section.nopadding{
+	padding: 0em 0% !important;
+}
+.about-me {
+	z-index: 1;
+	/*padding-top: 1em;*/
+	background: url(../images/2.jpg);
+	text-align: center;
+	min-height:750px;
+/*	background-size: 100% 100%;
+    -moz-background-size: 100% 100%;
+    -webkit-background-size: 100% 100%;*/
+}
+.about-me .right{
+	padding-top: 15%;
+	padding-right: 10%;
+	margin-left: 50%;
+	text-align: left;
+
+}
+.about-me .right h3{
+	color: #0B0354;
+	font-size: 3em;
+	font-family: 'Jockey One', sans-serif;
+	margin-bottom: 0.5em;
+}
+
 .bgi h3 {
 	color: #0B0354;
 	font-size: 3em;
@@ -372,6 +407,16 @@ section::after {
 	padding: 0 !important;
 	font-family: 'OpenSans-Regular';
 }
+
+.our-work h2 {
+	font-family: 'Jockey One', sans-serif;
+	font-weight: 100;
+	color: #000;
+	font-size: 3em;
+	text-transform: capitalize;
+	margin: 0px 0px 15px 0px;
+}
+
 /*--our-gallery--*/
 .bottom-gallery {
 	margin-bottom: 55px;
@@ -522,6 +567,42 @@ section.v {
     -moz-background-size: 100% 100%;
     -webkit-background-size: 100% 100%;
 }
+.v img {
+	width: 40%;
+	height: auto;
+	margin-left: 50%;
+	margin-top: 10%; 
+}
+
+
+
+section.end {
+	background: url(../images/6.jpg);
+	padding: 0em 0em !important;
+	text-align: center;
+	min-height: 700px;
+	width: 100%;
+	background-size: 100% 100%;
+    -moz-background-size: 100% 100%;
+    -webkit-background-size: 100% 100%;
+}
+.end .right {
+	margin-left: 40%;
+	margin-top: 40%;
+}
+.end img {
+	width: 30%;
+	height: auto;
+}
+
+a.mail {
+	
+}
+
+img.wechat{
+
+}
+
 .banner-info h3 {
 	font-family: 'Jockey One', sans-serif;
 	font-weight: 300;
@@ -664,14 +745,24 @@ ul.wmuSliderPagination {
 	z-index: 2;
 	cursor: pointer;
 }
-/*--social-feeds starts here--*/
-.social-feeds{
+/*--videoSection starts here--*/
+.videoSection{
 	background:url(../images/5.jpg);
 	background-size:cover;
 	min-height: 750px;
 	width: 100%;
 	padding-top:6em;
+	text-align: center;
 }
+.videoSection h2{
+	font-family: 'Jockey One', sans-serif;
+	font-weight: 100;
+	color: #000;
+	font-size: 3em;
+	text-transform: capitalize;
+	margin: 0px 0px 15px 0px;
+}
+
 .bottom-slide {
 	text-align: center;
 }
