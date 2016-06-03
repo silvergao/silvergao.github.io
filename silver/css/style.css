@@ -206,6 +206,77 @@ section.nopadding{
 	margin-bottom: 0.5em;
 }
 
+h3.title{
+	color: #0B0354;
+	font-size: 3em;
+	font-family: 'Jockey One', sans-serif;
+	margin-bottom: 0.5em;
+}
+h3.photo{
+	text-align: left;
+	margin-top: 3%;
+	margin-bottom: -4%;
+	margin-left: 16%;
+}
+h3.video{
+	text-align: center;
+}
+h3.contact-me{
+	margin-top: 25%;
+}
+section.v {
+	background: url(../images/4.jpg);
+	padding: 0em 0em !important;
+	text-align: center;
+	min-height: 700px;
+	width: 100%;
+	background-size: 100% 100%;
+    -moz-background-size: 100% 100%;
+    -webkit-background-size: 100% 100%;
+}
+.v img {
+	width: 40%;
+	height: auto;
+	margin-left: 50%;
+	margin-top: 10%; 
+}
+section.end {
+	background: url(../images/6.jpg);
+	padding: 0em 0em !important;
+	text-align: center;
+	font-family: sans-serif;
+	min-height: 700px;
+	width: 100%;
+	background-size: 100% 100%;
+    -moz-background-size: 100% 100%;
+    -webkit-background-size: 100% 100%;
+}
+.end .right {
+/*	margin-left: 40%;
+	margin-top: 40%;*/
+}
+.end img {
+	width: 30%;
+	height: auto;
+}
+
+a.mail {
+	
+}
+
+img.wechat{
+	width: 10%;
+	height: auto;
+}
+
+#footer{
+	font-size: 11px;
+	font-family: sans-serif;
+	text-align: center;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	color: #a4abb1 !important;
+}
 .bgi h3 {
 	color: #0B0354;
 	font-size: 3em;
@@ -556,51 +627,6 @@ section.slider .flexslider .slides img {
 	width: auto;
 	display: block;
 	border-radius: 5px;
-}
-section.v {
-	background: url(../images/4.jpg);
-	padding: 0em 0em !important;
-	text-align: center;
-	min-height: 700px;
-	width: 100%;
-	background-size: 100% 100%;
-    -moz-background-size: 100% 100%;
-    -webkit-background-size: 100% 100%;
-}
-.v img {
-	width: 40%;
-	height: auto;
-	margin-left: 50%;
-	margin-top: 10%; 
-}
-
-
-
-section.end {
-	background: url(../images/6.jpg);
-	padding: 0em 0em !important;
-	text-align: center;
-	min-height: 700px;
-	width: 100%;
-	background-size: 100% 100%;
-    -moz-background-size: 100% 100%;
-    -webkit-background-size: 100% 100%;
-}
-.end .right {
-	margin-left: 40%;
-	margin-top: 40%;
-}
-.end img {
-	width: 30%;
-	height: auto;
-}
-
-a.mail {
-	
-}
-
-img.wechat{
-
 }
 
 .banner-info h3 {
