@@ -17,7 +17,8 @@
 	
 		this.$el	= $( element );
 		this._init( options );
-		
+		//初始化时隐藏所有dg-btn
+		$(element).find('.dg-btn').hide();
 	};
 	
 	$.Gallery.defaults 		= {
@@ -227,6 +228,28 @@
 			});
 			
 		},
+		prev : function() {
+			if( _self.options.autoplay ) {
+				
+				clearTimeout( _self.slideshow );
+				_self.options.autoplay	= false;
+			
+			}
+			
+			_self._navigate('prev');
+			return false;
+		},
+		next : function() {
+			if( _self.options.autoplay ) {
+			
+				clearTimeout( _self.slideshow );
+				_self.options.autoplay	= false;
+			
+			}
+			
+			_self._navigate('next');
+			return false;
+		},
 		_getCoordinates		: function( position ) {
 			
 			if( this.support3d && this.supportTrans ) {
@@ -389,51 +412,67 @@
 					
 					// current item moves left
 					this.$currentItm.addClass('dg-transition').css( this._getCoordinates('left') );
-					
+					this.$currentItm.addClass('dg-prev');
+
 					// right item moves to the center
 					this.$rightItm.addClass('dg-transition').css( this._getCoordinates('center') );	
+					this.$rightItm.removeClass('dg-next');
+
+					this.$currentItm.find('.dg-btn').hide();
+					this.$leftItm.find('.dg-btn').hide();
+					this.$rightItm.find('.dg-btn').show();
 					
 					// next item moves to the right
 					if( this.$nextItm ) {
 						
 						// left item moves out
 						this.$leftItm.addClass('dg-transition').css( this._getCoordinates('outleft') );
+						this.$leftItm.removeClass('dg-prev');
 						
 						this.$nextItm.addClass('dg-transition').css( this._getCoordinates('right') );
-						
+						this.$nextItm.addClass('dg-next');
 					}
 					else {
 					
 						// left item moves right
 						this.$leftItm.addClass('dg-transition').css( this._getCoordinates('right') );
+						this.$leftItm.removeClass('dg-prev').addClass('dg-next');
 					
 					}
 					break;
 					
-				case 'prev' :
+				case 'prev' : //right shift ->
 				
 					this.current	= this.$leftItm.index();
 					
 					// current item moves right
 					this.$currentItm.addClass('dg-transition').css( this._getCoordinates('right') );
-					
+					this.$currentItm.addClass('dg-next');	//right means next, left means prev
+
 					// left item moves to the center
 					this.$leftItm.addClass('dg-transition').css( this._getCoordinates('center') );
+					this.$leftItm.removeClass('dg-prev');
 					
+					this.$currentItm.find('.dg-btn').hide();
+					this.$rightItm.find('.dg-btn').hide();
+					this.$leftItm.find('.dg-btn').show();
+
 					// prev item moves to the left
 					if( this.$prevItm ) {
 						
 						// right item moves out
 						this.$rightItm.addClass('dg-transition').css( this._getCoordinates('outright') );
+						this.$rightItm.removeClass('dg-next');
 					
 						this.$prevItm.addClass('dg-transition').css( this._getCoordinates('left') );
-						
+						this.$prevItm.addClass('dg-prev');
 					}
 					else {
 					
 						// right item moves left
 						this.$rightItm.addClass('dg-transition').css( this._getCoordinates('left') );
-					
+						this.$rightItm.removeClass('dg-next').addClass('dg-prev');
+
 					}
 					break;	
 					
