@@ -6,6 +6,7 @@ body{
 	margin:0;
 	padding:0;
 	font-family: 'Open Sans', sans-serif;
+	background: #efefef;
 }
 /*--fonts--*/
 @font-face{
@@ -186,6 +187,7 @@ section.nopadding{
 	z-index: 1;
 	/*padding-top: 1em;*/
 	background: url(../images/2.jpg);
+	background-repeat: no-repeat;
 	text-align: center;
 	min-height:750px;
 /*	background-size: 100% 100%;
@@ -210,7 +212,7 @@ h3.title{
 	color: #0B0354;
 	font-size: 3em;
 	font-family: 'Jockey One', sans-serif;
-	margin-bottom: 0.5em;
+	margin-bottom: 1em;
 }
 h3.photo{
 	text-align: left;
@@ -222,7 +224,7 @@ h3.video{
 	text-align: center;
 }
 h3.contact-me{
-	margin-top: 25%;
+	margin-top: 20%;
 }
 section.v {
 	background: url(../images/4.jpg);
@@ -240,6 +242,26 @@ section.v {
 	margin-left: 50%;
 	margin-top: 10%; 
 }
+/*--videoSection starts here--*/
+.videoSection{
+	background:url(../images/5.jpg);
+	background-repeat: no-repeat;
+	background-color: #efefef;	/*颜色和图片共存*/
+	margin-bottom: -2px; /*图片切片不好*/
+	min-height: 750px;
+	width: 100%;
+	padding-top:6em;
+	text-align: center;
+}
+.videoSection h2{
+	font-family: 'Jockey One', sans-serif;
+	font-weight: 100;
+	color: #000;
+	font-size: 3em;
+	text-transform: capitalize;
+	margin: 0px 0px 15px 0px;
+}
+
 section.end {
 	background: url(../images/6.jpg);
 	padding: 0em 0em !important;
@@ -274,7 +296,7 @@ img.wechat{
 	font-family: sans-serif;
 	text-align: center;
 	margin-top: 20px;
-	margin-bottom: 20px;
+	margin-bottom: 20%;
 	color: #a4abb1 !important;
 }
 .bgi h3 {
@@ -454,6 +476,7 @@ section::after {
 		padding: 0em 0em;
 		background: url(../images/3.jpg);
 		min-height: 700px;
+		background-repeat: no-repeat;
 		background-size: 100% 100%;
         -moz-background-size: 100% 100%;
         -webkit-background-size: 100% 100%;
@@ -771,24 +794,6 @@ ul.wmuSliderPagination {
 	z-index: 2;
 	cursor: pointer;
 }
-/*--videoSection starts here--*/
-.videoSection{
-	background:url(../images/5.jpg);
-	background-size:cover;
-	min-height: 750px;
-	width: 100%;
-	padding-top:6em;
-	text-align: center;
-}
-.videoSection h2{
-	font-family: 'Jockey One', sans-serif;
-	font-weight: 100;
-	color: #000;
-	font-size: 3em;
-	text-transform: capitalize;
-	margin: 0px 0px 15px 0px;
-}
-
 .bottom-slide {
 	text-align: center;
 }
