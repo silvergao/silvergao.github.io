@@ -21,36 +21,64 @@
 
 		<!--script-->
 		<script src="js/modernizr.custom.js"></script>
-		<script src="js/jquery-2.1.4.min.js"></script>
-		<script type="text/javascript" src="js/jquery-migrate-1.2.1.min.js"></script>
+		<!-- <script src="js/jquery-2.1.4.min.js"></script> -->
+		<!-- <script src="js/jquery-migrate-1.2.1.min.js"></script> -->
 		<script src="js/bootstrap.min.js"></script>
 		<script type="text/javascript" src="js/move-top.js"></script>
-		<script type="text/javascript" src="js/easing.js"></script>
-		<script defer src="js/jquery.flexslider.js"></script>
+		<!-- <script type="text/javascript" src="js/easing.js"></script> -->
+		<!-- <script defer src="js/jquery.flexslider.js"></script> -->
 
 		<!-- CSS STYLE -->
-		<link rel="stylesheet" type="text/css" href="css/video_style.css" media="screen" />
+<!-- 		<link rel="stylesheet" type="text/css" href="css/video_style.css" media="screen" />
 		<!-- FONT IMPORT -->
-		<link rel='stylesheet' type='text/css' href='css/video_css.css' media="screen"/>
+<!-- 		<link rel='stylesheet' type='text/css' href='css/video_css.css' media="screen"/>
 		<link rel="stylesheet" type="text/css" href="css/video_settings.css" media="screen" />
 		<!-- jQuery Paradigm Slider  -->
-		<script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
+<!-- 		<script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
 		<script type="text/javascript" src="js/jquery.cssAnimate.mini.js"></script>
 		<script type="text/javascript" src="js/jquery.waitforimages.js"></script>
 		<script type="text/javascript" src="js/jquery.touchwipe.min.js"></script>
-		<script type="text/javascript" src="js/jquery.themepunch.paradigm.js"></script>
+		<script type="text/javascript" src="js/jquery.themepunch.paradigm.js"></script> -->
 				<!-- get jQuery from the google apis -->
 		<!-- <script type="text/javascript" src="js/jquery.js"></script> -->
 
 		<!--script-->
-		<script type="text/javascript">
+<!-- 		<script type="text/javascript">
 			jQuery(document).ready(function($) {
 				$(".scroll").click(function(event){		
 					event.preventDefault();
 					$('html,body').animate({scrollTop:$(this.hash).offset().top},900);
 				});
 			});
-		</script>
+		</script> -->
+		
+		<!--grideffect-->
+		<link rel="stylesheet" type="text/css" href="grideffect/normalize.css" />
+		<link rel="stylesheet" type="text/css" href="grideffect/demo.css" />
+		<link rel="stylesheet" type="text/css" href="grideffect/component.css" />
+		<link rel="stylesheet" href="http://dreamsky.github.io/main/blog/common/init.css">
+		<style>
+			.codrops-header {
+				margin-top: 60px;
+				font-family: 'Microsoft Yahei'
+			}
+			.codrops-demos {
+				margin: 20px;
+			}
+			.grid-wrap {
+				max-width: 990px;
+			}
+			.grid figure,
+			.grid .placeholder {
+				width: 240px;
+				height: 200px;
+			}
+		</style>
+		<script src="grideffect/classie.js"></script>
+		<script src="grideffect/helper.js"></script>
+		<script src="grideffect/grid3d.js"></script>
+		<script src="grideffect/modernizr.custom.js"></script>
+		<script src="http://dreamsky.github.io/main/blog/common/init.js"></script>	
 		<!--fonts-->
 	</head>
 	<body>
@@ -81,51 +109,43 @@
 				<div class="container">
 					<h2>摄影集</h2>
 					<p></p>
-						<div class="gallery-bottom">
-							<div class="col-md-4 bottom-gallery">
-								<a href="./images/IMG_3.jpg" rel="title" class="b-link-stripe b-animate-go  thickbox">
-								<img class="img-responsive" src="images/IMG_3.jpg" />
-								<div class="b-wrapper">
-									<h3 class="b-animate b-from-left    b-delay03 ">
-										<span class="txt">Lorem</span>
-										<span class="glyphicon glyphicon-arrow-right gal-icn" aria-hidden="true"></span>
-									</h3>
-								</div>
-								</a>
+					<div class="gallery-bottom">
+					<section class="grid3d horizontal" id="grid3d">
+						<div class="grid-wrap">
+							<div class="grid">
+								<figure><img src="images/1.jpg" alt="img04"/></figure>
+								<figure><img src="images/2.jpg" alt="img03"/></figure>
+								<figure><img src="images/3.jpg" alt="img01"/></figure>
+								<figure><img src="images/4.jpg" alt="img05"/></figure>
 							</div>
-							<div class="col-md-4 bottom-gallery">
-								<a href="images/IMG_1.jpg" rel="title" class="b-link-stripe b-animate-go  thickbox">
-								<img class="img-responsive" src="images/IMG_1.jpg" />
-								<div class="b-wrapper">
-									<h3 class="b-animate b-from-left    b-delay03 ">
-										<span class="txt">Lorem</span>
-										<span class="glyphicon glyphicon-arrow-right gal-icn" aria-hidden="true"></span>
-									</h3>
-								</div>
-								</a>
+						</div><!-- /grid-wrap -->
+						<div class="content">
+							<div>
+								<div class="dummy-img"></div>
+								<img src="images/1.jpg" width="100%" height="auto"/>
 							</div>
-							<div class="col-md-4 bottom-gallery">
-								<a href="images/IMG_5.jpg" rel="title" class="b-link-stripe b-animate-go  thickbox">
-								<img class="img-responsive" src="images/IMG_5.jpg" />
-								<div class="b-wrapper">
-									<h3 class="b-animate b-from-left    b-delay03 ">
-										<span class="txt">Lorem</span>
-										<span class="glyphicon glyphicon-arrow-right gal-icn" aria-hidden="true"></span>
-									</h3>
-								</div>
-								</a>
+							<div>
+								<div class="dummy-img"></div>
+								<img src="images/1.jpg" width="100%" height="auto"/>
 							</div>
-							
-							<div class="clearfix"></div>
-							<script src="js/jquery.chocolat.js"></script>
-							<link rel="stylesheet" href="css/chocolat.css" type="text/css" media="screen" charset="utf-8">
-							<!--light-box-files -->
-							<script type="text/javascript" charset="utf-8">
-							$(function() {
-							$('.bottom-gallery a').Chocolat();
-							});
-							</script>
+							<div>
+								<img src="images/1.jpg" width="100%" height="auto"/>
+							</div>
+							<div>
+								<div class="dummy-img"></div>
+								<p class="dummy-text">The only people for me are the mad ones, the ones who are mad to live, mad to talk, mad to be saved, desirous of everything at the same time, the ones who never yawn or say a commonplace thing, but burn, burn, burn like fabulous yellow roman candles exploding like spiders across the stars.</p>
+								<p class="dummy-text">The only people for me are the mad ones, the ones who are mad to live, mad to talk, mad to be saved, desirous of everything at the same time, the ones who never yawn or say a commonplace thing, but burn, burn, burn like fabulous yellow roman candles exploding like spiders across the stars.</p>
+							</div>
+
+							<span class="loading"></span>
+							<span class="icon close-content"></span>
 						</div>
+					</section>
+					<script>
+						new grid3D( document.getElementById( 'grid3d' ) );
+					</script>
+					<script src="http://dreamsky.github.io/main/blog/common/jquery.min.js"></script>
+					</div>
 				</div>
 			</div>
 
