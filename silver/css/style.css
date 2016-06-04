@@ -172,7 +172,7 @@ span.glyphicon.glyphicon-search.edit {
     -webkit-background-size: 100% 100%;
 }
 section .left{
-	padding-right: 40%;
+	padding-right: 45%;
 	margin-left: 15%;
 	text-align: left;
 }
@@ -1306,7 +1306,6 @@ input.name,input.nuber,input.mail2{
 		font-size: 1.9em;
 	}
 	.bgi p {
-		color: #DDD9D9;
 		font-size: 1em;
 	}
 	.sub-cont h3 {
@@ -1466,7 +1465,6 @@ input.name,input.nuber,input.mail2{
 		font-size: 1.5em;
 	}
 	.bgi p {
-		color: #221E1E;
 		font-size: 1.1em;
 	}
 	.our-features h1, .our-work h2, .testimonials h3, .contact_page h3, .banner-info h3, .about h3, .our-team h3, .test-monials h3, .gallery h3 {
@@ -1610,7 +1608,6 @@ input.name,input.nuber,input.mail2{
 		font-size: 1.3em;
 	}
 	.bgi p {
-		color: #fff;
 		font-size: 0.9em;
 	}
 	button.btn.btn-warning.but1,button.btn.btn-warning.but1:hover {
