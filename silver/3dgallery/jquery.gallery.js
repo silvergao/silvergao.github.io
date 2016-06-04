@@ -226,9 +226,10 @@
 				_self.isAnim	= false;
 				
 			});
-			
+						
 		},
 		prev : function() {
+			var _self	= this;
 			if( _self.options.autoplay ) {
 				
 				clearTimeout( _self.slideshow );
@@ -240,6 +241,7 @@
 			return false;
 		},
 		next : function() {
+			var _self	= this;
 			if( _self.options.autoplay ) {
 			
 				clearTimeout( _self.slideshow );
@@ -248,6 +250,16 @@
 			}
 			
 			_self._navigate('next');
+			return false;
+		},
+		stop : function() {
+			var _self	= this;
+			if( _self.options.autoplay ) {
+			
+				clearTimeout( _self.slideshow );
+				_self.options.autoplay	= false;
+			
+			}
 			return false;
 		},
 		_getCoordinates		: function( position ) {
@@ -418,9 +430,10 @@
 					this.$rightItm.addClass('dg-transition').css( this._getCoordinates('center') );	
 					this.$rightItm.removeClass('dg-next');
 
+					// hide all btn
 					this.$currentItm.find('.dg-btn').hide();
 					this.$leftItm.find('.dg-btn').hide();
-					this.$rightItm.find('.dg-btn').show();
+					this.$rightItm.find('.dg-btn').hide();
 					
 					// next item moves to the right
 					if( this.$nextItm ) {
@@ -453,9 +466,10 @@
 					this.$leftItm.addClass('dg-transition').css( this._getCoordinates('center') );
 					this.$leftItm.removeClass('dg-prev');
 					
+					// hide all btn
 					this.$currentItm.find('.dg-btn').hide();
 					this.$rightItm.find('.dg-btn').hide();
-					this.$leftItm.find('.dg-btn').show();
+					this.$leftItm.find('.dg-btn').hide();
 
 					// prev item moves to the left
 					if( this.$prevItm ) {
@@ -480,8 +494,13 @@
 			
 			this._setItems();
 			
+			// only show currentItm's btn
+			this.$currentItm.find('.dg-btn').show();
+
 			if( !this.supportTrans )
 				this.$currentItm.addClass('dg-center');
+
+
 			
 		},
 		_startSlideshow		: function() {

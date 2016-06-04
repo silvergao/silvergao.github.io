@@ -26,8 +26,8 @@
 	position: absolute;
 	left: 0;
 	top: 0;
-	background: transparent url(./browser.png) no-repeat top left;
-	box-shadow: 0px 10px 20px rgba(0,0,0,0.3);
+	/*background: transparent url(./browser.png) no-repeat top left;*/
+	/*box-shadow: 0px 10px 20px rgba(0,0,0,0.3);*/
 }
 .dg-wrapper a.dg-transition{
 	-webkit-transition: all 0.5s ease-in-out;
@@ -55,12 +55,11 @@
 	display: block;
 }
 .dg-container nav{
-	width: 200px;
+	width: 170px;
 	position: absolute;
 	z-index: 1000;
 	bottom: 10px;
-	left: 50%;
-	margin-left: -29px;
+	margin-left: 38%;
 }
 .dg-container nav span{
 	text-indent: -9000px;
@@ -79,41 +78,46 @@
 	background-position: top right;
 	margin-left: 10px;
 }
-		
+div.dg-btn-panel{
+	display: inline;  /*使子居中*/
+}		
 span.dg-btn-prev{
 	display: block;
 	position: absolute;
 	z-index: 1000;
-	width: 100%;
+	width: 50%;
 	height: 100%;
 	/*background: red;*/
 	cursor: pointer;
 	margin-top: -65%;
-	margin-left: -100%;
+	margin-left: -50%;
+	overflow: hidden;
 }
 span.dg-btn-next{
 	display: block;
 	position: absolute;
 	z-index: 1000;
-	width: 100%;
+	width: 50%;
 	height: 100%;
 	/*background: red;*/
 	cursor: pointer;
 	margin-top: -65%;
 	margin-left: 100%;
+	overflow: hidden;
 }
 div.dg-stop{
 	float: left;
 	width: 50px;
-	background-color: #e3e3e3;
+	background-color: rgba(148, 148, 148, 0.34);
 	font-size: 1em;
 	cursor: pointer;
+	margin-top: 10px;
 }
 div.dg-prev{
 	float: left;
 	width: 50px;
 	border: 20px solid transparent;
-	border-right: 40px solid #e3e3e3;
+	border-right: 40px solid rgba(148, 148, 148, 0.34);
 	height: 0px;
 	cursor: pointer;
 }
@@ -121,7 +125,7 @@ div.dg-next{
 	float: left;
 	width: 50px;
 	border: 20px solid transparent;
-	border-left: 40px solid #e3e3e3;
+	border-left: 40px solid rgba(148, 148, 148, 0.34);
 	height: 0px;
 	cursor: pointer;
 }
