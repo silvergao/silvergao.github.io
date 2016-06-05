@@ -312,6 +312,30 @@ img.wechat{
 	font-size: 1.3em;
 	margin-bottom: 2em;
 }
+/*mobile*/
+@media screen and (max-width: 480px) {
+	section .left {
+		margin-left: 10%;
+	}
+	section .left h3 {
+		width: 200px;
+	}
+	section.v {
+		min-height: 200px;
+	}
+	section.end {
+		min-height: 300px;
+	}
+	.videoSection{
+		background-size: 100% 100%;
+	    -moz-background-size: 100% 100%;
+	    -webkit-background-size: 100% 100%;
+		min-height: 450px;
+	}
+	.about-me .right h3 {
+		font-size: 1.6em;
+	}
+}
 button.btn.btn-warning.but1 {
 	padding: 10px 22px;
 	outline: none;
@@ -1606,7 +1630,7 @@ input.name,input.nuber,input.mail2{
 		padding-top: 3em !important;
 	}
 	.bgi h3 {
-		font-size: 1.3em;
+		font-size: 1.6em;
 	}
 	.bgi p {
 		font-size: 0.9em;

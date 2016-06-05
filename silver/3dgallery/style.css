@@ -78,6 +78,16 @@
 	background-position: top right;
 	margin-left: 10px;
 }
+
+/* grid */
+.grid-wrap {
+	max-width: 990px;
+}
+.grid figure,
+.grid .placeholder {
+	width: 240px;
+	height: 200px;
+}
 div.dg-btn-panel{
 	display: inline;  /*使子居中*/
 }		
@@ -128,4 +138,25 @@ div.dg-next{
 	border-left: 40px solid rgba(148, 148, 148, 0.34);
 	height: 0px;
 	cursor: pointer;
+}
+
+
+/*mobile*/
+@media screen and (max-width: 480px) {
+	.grid-wrap {
+		max-width: 400px;
+	}
+	.dg-container{
+		height: 320px;
+	}
+	.dg-wrapper{
+		width: 200px;
+		height: 150px;
+	}
+	.dg-wrapper a div {
+		line-height: 1.4	;
+	}
+	.dg-container nav{
+		margin-left: 17%;
+	}
 }
