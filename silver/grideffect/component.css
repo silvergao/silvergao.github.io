@@ -321,7 +321,7 @@ p.dummy-text:nth-child(3) {
 	opacity: 1;
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1500px) {
 
 	.grid figure,
 	.grid .placeholder {
