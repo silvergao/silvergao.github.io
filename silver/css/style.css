@@ -312,13 +312,66 @@ img.wechat{
 	font-size: 1.3em;
 	margin-bottom: 2em;
 }
+.our-features p {
+	color: #624C4C;
+	font-weight: 100;
+	font-size: 18px;
+	text-transform: capitalize;
+	margin-bottom: 55px;
+	padding:0 !important;
+	font-family: 'OpenSans-Regular';
+}
+/*--our-work--*/
+#our-work{
+		padding: 0em 0em;
+		background: url(../images/3.jpg);
+		min-height: 700px;
+		background-repeat: no-repeat;
+		background-size: 100% 100%;
+        -moz-background-size: 100% 100%;
+        -webkit-background-size: 100% 100%;
+	}
+.our-work{
+	text-align:center;
+}
+.our-work h2{
+	font-family: 'Jockey One', sans-serif;
+	font-weight: 100;
+	color: #000;
+	font-size: 3em;
+	text-transform: capitalize;
+	margin: 0px 0px 15px 0px;
+}
+.our-work p{
+	color: #000;
+	font-weight: 100;
+	font-size: 18px;
+	text-transform: capitalize;
+	margin-bottom: 55px;
+	padding: 0 !important;
+	font-family: 'OpenSans-Regular';
+}
+
+.our-work h2 {
+	font-family: 'Jockey One', sans-serif;
+	font-weight: 100;
+	color: #000;
+	font-size: 3em;
+	text-transform: capitalize;
+	margin: 0px 0px 15px 0px;
+}
+
+
 /*mobile*/
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 700px) {
+	h3.title {
+		font-size: 1.8em;
+	}
 	section .left {
-		margin-left: 10%;
+		margin-left: 8%;
 	}
 	section .left h3 {
-		width: 200px;
+		width: 200%;
 	}
 	section.v {
 		min-height: 200px;
@@ -326,14 +379,34 @@ img.wechat{
 	section.end {
 		min-height: 300px;
 	}
+	.about-me {
+		min-height: 400px;
+		background-position: -500px;
+	}
+	.about-me .right {
+		padding-top: 10%;
+		margin-left: 35%;
+	}
+	.about-me .right h3 {
+		font-size: 1.8em;
+	}
+	section.nopadding{
+		min-height: 400px;
+	}
+	#our-work {
+		/*background-size: 100100%;*/
+		/*-moz-background-size: 100%;*/
+		/*-webkit-background-size: 100%;*/
+		background-position: -30px;
+	}
 	.videoSection{
 		background-size: 100% 100%;
 	    -moz-background-size: 100% 100%;
 	    -webkit-background-size: 100% 100%;
 		min-height: 450px;
 	}
-	.about-me .right h3 {
-		font-size: 1.6em;
+	.grid figure {
+		margin: 0 10px;
 	}
 }
 button.btn.btn-warning.but1 {
@@ -355,15 +428,7 @@ button.btn.btn-danger.btn-styl{
 	font-size: 20px;
 	font-weight: 100;
 }
-.our-features p {
-	color: #624C4C;
-	font-weight: 100;
-	font-size: 18px;
-	text-transform: capitalize;
-	margin-bottom: 55px;
-	padding:0 !important;
-	font-family: 'OpenSans-Regular';
-}
+
 .icn-styling {
 	font-size: 70px;
 	padding-bottom: 25px;
@@ -495,45 +560,6 @@ section::after {
 	color: #fff;
 	font-size: 1em;
 	line-height: 1.8em;
-}
-/*--our-work--*/
-#our-work{
-		padding: 0em 0em;
-		background: url(../images/3.jpg);
-		min-height: 700px;
-		background-repeat: no-repeat;
-		background-size: 100% 100%;
-        -moz-background-size: 100% 100%;
-        -webkit-background-size: 100% 100%;
-	}
-.our-work{
-	text-align:center;
-}
-.our-work h2{
-	font-family: 'Jockey One', sans-serif;
-	font-weight: 100;
-	color: #000;
-	font-size: 3em;
-	text-transform: capitalize;
-	margin: 0px 0px 15px 0px;
-}
-.our-work p{
-	color: #000;
-	font-weight: 100;
-	font-size: 18px;
-	text-transform: capitalize;
-	margin-bottom: 55px;
-	padding: 0 !important;
-	font-family: 'OpenSans-Regular';
-}
-
-.our-work h2 {
-	font-family: 'Jockey One', sans-serif;
-	font-weight: 100;
-	color: #000;
-	font-size: 3em;
-	text-transform: capitalize;
-	margin: 0px 0px 15px 0px;
 }
 
 /*--our-gallery--*/
@@ -1630,10 +1656,10 @@ input.name,input.nuber,input.mail2{
 		padding-top: 3em !important;
 	}
 	.bgi h3 {
-		font-size: 1.6em;
+		font-size: 1.8em;
 	}
 	.bgi p {
-		font-size: 0.9em;
+		font-size: 1.0em;
 	}
 	button.btn.btn-warning.but1,button.btn.btn-warning.but1:hover {
 		padding: 4px 9px;

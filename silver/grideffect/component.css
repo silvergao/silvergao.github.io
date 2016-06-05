@@ -330,3 +330,14 @@ p.dummy-text:nth-child(3) {
 	}
 
 }
+@media screen and (max-width: 480px) {
+	.grid figure {
+		margin: -10px 10px; 
+	}
+	.grid figure,
+	.grid .placeholder {
+		width: 240px;
+		height: 212px;
+	}
+
+}
