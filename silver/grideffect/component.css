@@ -328,8 +328,14 @@ p.dummy-text:nth-child(3) {
 		width: 300px;
 		height: 300px;
 	}
-
+	.grid {
+		margin-left: 5%;
+	}
+	.grid figure {
+		margin: 0 2px -60px 0;
+	}
 }
+
 @media screen and (max-width: 1500px) {
 
 	.grid figure,
@@ -337,7 +343,12 @@ p.dummy-text:nth-child(3) {
 		width: 240px;
 		height: 212px;
 	}
-
+	.grid {
+		margin-left: 0;
+	}
+	.grid figure {
+		margin: 10px;
+	}
 }
 @media screen and (max-width: 480px) {
 	.grid figure {
