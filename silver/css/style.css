@@ -19,8 +19,9 @@ body{
 }
 /*--fonts--*/
 body{
-	margin:0;
 	padding:0;
+	margin: 0 auto;
+	max-width: 1500px;
 }
 /*--header-nav--*/
 .navbar-default {
