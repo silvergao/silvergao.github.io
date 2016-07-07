@@ -29,6 +29,7 @@
 	</head>
 	<body>
 		<div class="header" id="home">
+			<div id="tip" style="text-align:center;display:none;" >该浏览器还没兼容，请使用Chrome内核的浏览器</div>
 			<div class="header-banner">
 					<!-- Top Navigation -->
 					<div class="container page-seperator">
@@ -156,6 +157,30 @@
 				    			$("#dg-container").gallery("stop");	
 				    			return false;
 							});
+							function getExplorer() {
+								var explorer = window.navigator.userAgent;
+								//ie 
+								if (explorer.indexOf("MSIE") >= 0) {
+									$("#tip").show();
+								}
+								//firefox 
+								else if (explorer.indexOf("Firefox") >= 0) {
+									$("#tip").show();
+								}
+								//Chrome
+								else if(explorer.indexOf("Chrome") >= 0){
+									//
+								}
+								//Opera
+								else if(explorer.indexOf("Opera") >= 0){
+									$("#tip").show();
+								}
+								//Safari
+								else if(explorer.indexOf("Safari") >= 0){
+									$("#tip").show();
+								}
+							}
+							getExplorer();
 						});
 					</script>
 			</div>
