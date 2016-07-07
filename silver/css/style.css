@@ -164,7 +164,7 @@ span.glyphicon.glyphicon-search.edit {
 	transition:0.5s;
 }
 .bgi{
-	background:url(../images/1.jpg);
+	background:url(http://o9xru1ztf.bkt.clouddn.com/1.jpg);
 	min-height:700px;
 	padding-top: 17em !important;
 	text-align:center;
@@ -187,7 +187,7 @@ section.nopadding{
 .about-me {
 	z-index: 1;
 	/*padding-top: 1em;*/
-	background: url(../images/2.jpg);
+	background: url(http://o9xru1ztf.bkt.clouddn.com/2.jpg);
 	background-repeat: no-repeat;
 	text-align: center;
 	min-height:750px;
@@ -228,7 +228,7 @@ h3.contact-me{
 	margin-top: 10%;
 }
 section.v {
-	background: url(../images/4.jpg);
+	background: url(http://o9xru1ztf.bkt.clouddn.com/4.jpg);
 	padding: 0em 0em !important;
 	text-align: center;
 	min-height: 600px;
@@ -245,7 +245,7 @@ section.v {
 }
 /*--videoSection starts here--*/
 .videoSection{
-	background:url(../images/5.jpg);
+	background:url(http://o9xru1ztf.bkt.clouddn.com/5.jpg);
 	background-repeat: no-repeat;
 	background-color: #efefef;	/*颜色和图片共存*/
 	margin-bottom: -2px; /*图片切片不好*/
@@ -264,7 +264,7 @@ section.v {
 }
 
 section.end {
-	background: url(../images/6.jpg);
+	background: url(http://o9xru1ztf.bkt.clouddn.com/6.jpg);
 	padding: 0em 0em !important;
 	text-align: center;
 	font-family: sans-serif;
@@ -325,7 +325,7 @@ img.wechat{
 /*--our-work--*/
 #our-work{
 		padding: 0em 0em;
-		background: url(../images/3.jpg);
+		background: url(http://o9xru1ztf.bkt.clouddn.com/3.jpg);
 		min-height: 700px;
 		background-repeat: no-repeat;
 		background-size: 100% 100%;
@@ -509,7 +509,7 @@ section::after {
 .ss-style-doublediagonal {
 	z-index: 1;
 	padding-top: 1em;
-	background: url(../images/2.jpg);
+	background: url(http://o9xru1ztf.bkt.clouddn.com/2.jpg);
 	text-align: center;
 	min-height:700px;
 	background-size: 100% 100%;
@@ -683,7 +683,7 @@ span.gal-icn {
 	color:#d80b36;
 }
 section.slider {
-	background: url(../images/3.jpg);
+	background: url(http://o9xru1ztf.bkt.clouddn.com/3.jpg);
 	padding: 0em 0em !important;
 	text-align: center;
 	min-height: 700px;
